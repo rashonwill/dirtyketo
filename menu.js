@@ -110,11 +110,11 @@ let updateCart = count + 1;
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
 
   })
-  let cartNow = localStorage.getItem('cartItems')
-   count = cartNow;
-  console.log(count)
+
 });
 
 
@@ -177,10 +177,10 @@ let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
-  })
-    let cartNow = localStorage.getItem('cartItems')
    count = cartNow;
   console.log(count)
+  })
+
 });
 
 $('#guaca').on('click', function(){
@@ -240,11 +240,10 @@ let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
-  })
-  
-    let cartNow = localStorage.getItem('cartItems')
-   count = cartNow;
+       count = cartNow;
   console.log(count)
+  })
+ 
   
 });
 
@@ -306,11 +305,10 @@ let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
   })
   
-  let cartNow = localStorage.getItem('cartItems')
-   count = cartNow;
-  console.log(count)
 });
 
 
