@@ -7,7 +7,7 @@ let apps =  (`<div class="title"> Appetizers</div>
   <img class="card-img-top" src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">Taco Bites</p>
-    <a href="#" class="btn" id="tacos">Order</a>
+    <button class="btn" id="tacos">Order</button>
   </div>
 </div>  
   <div class="card" style="width: 18rem;">
