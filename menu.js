@@ -201,7 +201,7 @@ $('#salads').click(function renderSalads(){
 </div>  
 
   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="" alt="Card image cap">
+  <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2364/6329/articles/primalkitchen_blog_kalesalad_03_2048x.jpg?v=1570834892" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">Avacado Kale Salad</p>
     <a href="#" class="btn">Order</a>
