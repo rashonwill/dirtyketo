@@ -729,7 +729,7 @@ $('#desserts').click(function renderDesserts(){
 
 
 //Menu Selection
-$(#tacos).on('click', function(){
+$('#tacos').on('click', function(){
 //     $('.course').empty();
 //   $('.course-opts').empty();
     console.log('clicking tacos')
