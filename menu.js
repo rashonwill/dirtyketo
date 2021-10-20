@@ -106,7 +106,8 @@ $('#tacos').on('click', function(){
          $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let bag = localStorage.getItem('cartItems');		
+let bag = localStorage.getItem('cartItems');
+           console.log(bag)
 let updatebag = bag + 1;
 let totalBag = localStorage.setItem('cartItems', updatebag);
 let cart = localStorage.getItem('cartItems');           
