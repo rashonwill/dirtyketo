@@ -36,59 +36,59 @@ let apps =  (`<div class="title"> Appetizers</div>
   </div>`);
   $('.main').append(apps);
   
-//   $(apps).on('click', '#tacos', function(){
-// //     $('.course').empty();
-// //   $('.course-opts').empty();
-//     console.log('clicking tacos')
-//   $('.main').empty();
-//   let course = (`
-//   <div class="dinner">
-//     <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
-//       </div> 
+$('#tacos').on('click', function(){
+//     $('.course').empty();
+//   $('.course-opts').empty();
+    console.log('clicking tacos')
+  $('.main').empty();
+  let course = (`
+  <div class="dinner">
+    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
+      </div> 
   
-//   `);
-//   $('.course').append(course);
+  `);
+  $('.course').append(course);
   
   
-//   let mealDetails = (`
-//   <div class="course-info">
-//         <div class="course-name">Taco Bites</div>
-//         <div class="course-description">
-//           <p> Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits. </p>
-//         </div>
-//         <div class="course-price">$10.99 | 3 carbs</div>
-//       </div>
-//       <div class="form-group">
-//     <label for="exampleFormControlSelect1">Select A Side</label>
-//     <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-//       <option>No Thanks</option>
-//       <option>Jimca Fries</option>
-//        <option>Cauliflower Mac n Cheese</option>
-//       <option>Loaded Cauliflower Mashed</option>
-//       <option>Bacon Greenbeans</option>
-//     </select>
-//   </div>
+  let mealDetails = (`
+  <div class="course-info">
+        <div class="course-name">Taco Bites</div>
+        <div class="course-description">
+          <p> Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits. </p>
+        </div>
+        <div class="course-price">$10.99 | 3 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
       
-//        <div class="form-group">
-//     <label for="exampleFormControlSelect1">Select A Beverage</label>
-//     <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-//       <option>No Thanks</option>
-//       <option>Coke Zero</option>
-//       <option>Diet Coke</option>
-//       <option>Dr.Pepper Zero</option>
-//       <option>Unsweetend Tea</option>
-//       <option>Bottled Water</option>
-//       <option>House Lemondade</option>
-//       <option>Keto Coffee</option>
-//     </select>
-//   </div>
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
   
-//     <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
   
-//   `);
-//   $('.course-opts').append(mealDetails);
+  `);
+  $('.course-opts').append(mealDetails);
   
-// });
+});
 
 
 
@@ -729,59 +729,7 @@ $('#desserts').click(function renderDesserts(){
 
 
 //Menu Selection
-$('#tacos').on('click', function(){
-//     $('.course').empty();
-//   $('.course-opts').empty();
-    console.log('clicking tacos')
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
-  <div class="course-info">
-        <div class="course-name">Taco Bites</div>
-        <div class="course-description">
-          <p> Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits. </p>
-        </div>
-        <div class="course-price">$10.99 | 3 carbs</div>
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
-  </div>
-      
-       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Beverage</label>
-    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Coke Zero</option>
-      <option>Diet Coke</option>
-      <option>Dr.Pepper Zero</option>
-      <option>Unsweetend Tea</option>
-      <option>Bottled Water</option>
-      <option>House Lemondade</option>
-      <option>Keto Coffee</option>
-    </select>
-  </div>
-  
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
-  `);
-  $('.course-opts').append(mealDetails);
-  
-});
+
 
 
 
