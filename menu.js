@@ -35,6 +35,222 @@ let apps =  (`<div class="title"> Appetizers</div>
        
   </div>`);
   $('.main').append(apps);
+  
+  $(apps).on('click', '#tacos', function renderTacoBites(){
+    $('.course').empty();
+  $('.course-opts').empty();
+  $('.main').empty();
+  let course = (`
+  <div class="dinner">
+    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
+      </div> 
+  
+  `);
+  $('.course').append(course);
+  
+  
+  let mealDetails = (`
+  <div class="course-info">
+        <div class="course-name">Taco Bites</div>
+        <div class="course-description">
+          <p> Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits. </p>
+        </div>
+        <div class="course-price">$10.99 | 3 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+  
+  `);
+  $('.course-opts').append(mealDetails);
+  
+});
+
+
+
+$(apps).on('click', '#hotdogs', function renderHotDogs(){
+    $('.course').empty();
+  $('.course-opts').empty();
+  $('.main').empty();
+  let course = (`
+  <div class="dinner">
+    <img src="https://www.patrickmaese.com/wp-content/uploads/2019/03/Chili-Cheese-Dogs-blog-1-500x500.jpg"/>  
+      </div> 
+  
+  `);
+  $('.course').append(course);
+  
+  
+  let mealDetails = (`
+  <div class="course-info">
+        <div class="course-name">Chilli Cheese Hot Dogs</div>
+        <div class="course-description">
+          <p> These Keto Chili Cheese Dogs have everything you love about this classic, without the carbs! Easy, low carb, gluten free pigs in a blanket are smothered with keto chili and shredded cheddar cheese! </p>
+        </div>
+        <div class="course-price">$9.99 | 3.8 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+  
+  `);
+  $('.course-opts').append(mealDetails);
+  
+  
+});
+
+$(apps).on('click', '#guaca', function renderGuacamole(){
+   $('.course').empty();
+  $('.course-opts').empty();
+  $('.main').empty();
+  let course = (`
+  <div class="dinner">
+    <img src="https://theketoqueens.com/wp-content/uploads/2018/04/Low-Carb-Keto-Tortilla-Chips-Recipe-500x375.jpg"/>  
+      </div> 
+  
+  `);
+  $('.course').append(course);
+  
+  
+  let mealDetails = (`
+  <div class="course-info">
+        <div class="course-name">Guacamole & Chips</div>
+        <div class="course-description">
+          <p> This Homemade Low Carb Keto Tortilla Chips Recipe will become your go-to tortilla chips recipe! It’s perfect when you’re craving crispy chips paired with salsa, guacamole, or queso. </p>
+        </div>
+        <div class="course-price">$8.99 | 2.6 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+  
+  `);
+  $('.course-opts').append(mealDetails);
+  
+  
+});
+
+$(apps).on('click', '#burgerbites', function renderBurgerBites(){
+    $('.course').empty();
+  $('.course-opts').empty();
+  $('.main').empty();
+  let course = (`
+  <div class="dinner">
+    <img src="https://www.foodnetwork.com/content/dam/images/food/video/9/94/947/9471/9471366.jpg"/>  
+      </div> 
+  
+  `);
+  $('.course').append(course);
+  
+  
+  let mealDetails = (`
+  <div class="course-info">
+        <div class="course-name">Bacon Cheese Burger Bites</div>
+        <div class="course-description">
+          <p> Low carb, bunless burger bites, that come with letteuce, cheese, pickles, bacon, tomato, and a juicy ground beef patty.  </p>
+        </div>
+        <div class="course-price">$11.99 | 1 carb</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+  
+  `);
+  $('.course-opts').append(mealDetails);
+  
+});
   return apps;
 });
 
@@ -514,221 +730,7 @@ $('#desserts').click(function renderDesserts(){
 //Menu Selection
 
 
-$('#tacos').click(function renderTacoBites(){
-    $('.course').empty();
-  $('.course-opts').empty();
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
-  <div class="course-info">
-        <div class="course-name">Taco Bites</div>
-        <div class="course-description">
-          <p> Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits. </p>
-        </div>
-        <div class="course-price">$10.99 | 3 carbs</div>
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
-  </div>
-      
-       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Beverage</label>
-    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Coke Zero</option>
-      <option>Diet Coke</option>
-      <option>Dr.Pepper Zero</option>
-      <option>Unsweetend Tea</option>
-      <option>Bottled Water</option>
-      <option>House Lemondade</option>
-      <option>Keto Coffee</option>
-    </select>
-  </div>
-  
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
-  `);
-  $('.course-opts').append(mealDetails);
-  
-});
 
-// renderTacoBites();
-
-function renderHotDogs(){
-    $('.course').empty();
-  $('.course-opts').empty();
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.patrickmaese.com/wp-content/uploads/2019/03/Chili-Cheese-Dogs-blog-1-500x500.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
-  <div class="course-info">
-        <div class="course-name">Chilli Cheese Hot Dogs</div>
-        <div class="course-description">
-          <p> These Keto Chili Cheese Dogs have everything you love about this classic, without the carbs! Easy, low carb, gluten free pigs in a blanket are smothered with keto chili and shredded cheddar cheese! </p>
-        </div>
-        <div class="course-price">$9.99 | 3.8 carbs</div>
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
-  </div>
-      
-       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Beverage</label>
-    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Coke Zero</option>
-      <option>Diet Coke</option>
-      <option>Dr.Pepper Zero</option>
-      <option>Unsweetend Tea</option>
-      <option>Bottled Water</option>
-      <option>House Lemondade</option>
-      <option>Keto Coffee</option>
-    </select>
-  </div>
-  
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
-  `);
-  $('.course-opts').append(mealDetails);
-  
-  
-};
-
-function renderGuacamole(){
-   $('.course').empty();
-  $('.course-opts').empty();
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://theketoqueens.com/wp-content/uploads/2018/04/Low-Carb-Keto-Tortilla-Chips-Recipe-500x375.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
-  <div class="course-info">
-        <div class="course-name">Guacamole & Chips</div>
-        <div class="course-description">
-          <p> This Homemade Low Carb Keto Tortilla Chips Recipe will become your go-to tortilla chips recipe! It’s perfect when you’re craving crispy chips paired with salsa, guacamole, or queso. </p>
-        </div>
-        <div class="course-price">$8.99 | 2.6 carbs</div>
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
-  </div>
-      
-       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Beverage</label>
-    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Coke Zero</option>
-      <option>Diet Coke</option>
-      <option>Dr.Pepper Zero</option>
-      <option>Unsweetend Tea</option>
-      <option>Bottled Water</option>
-      <option>House Lemondade</option>
-      <option>Keto Coffee</option>
-    </select>
-  </div>
-  
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
-  `);
-  $('.course-opts').append(mealDetails);
-  
-  
-};
-
-function renderBurgerBites(){
-    $('.course').empty();
-  $('.course-opts').empty();
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.foodnetwork.com/content/dam/images/food/video/9/94/947/9471/9471366.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
-  <div class="course-info">
-        <div class="course-name">Bacon Cheese Burger Bites</div>
-        <div class="course-description">
-          <p> Low carb, bunless burger bites, that come with letteuce, cheese, pickles, bacon, tomato, and a juicy ground beef patty.  </p>
-        </div>
-        <div class="course-price">$11.99 | 1 carb</div>
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
-  </div>
-      
-       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Beverage</label>
-    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Coke Zero</option>
-      <option>Diet Coke</option>
-      <option>Dr.Pepper Zero</option>
-      <option>Unsweetend Tea</option>
-      <option>Bottled Water</option>
-      <option>House Lemondade</option>
-      <option>Keto Coffee</option>
-    </select>
-  </div>
-  
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
-  `);
-  $('.course-opts').append(mealDetails);
-  
-};
 
 
 
