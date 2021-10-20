@@ -113,6 +113,7 @@ let newCart = localStorage.getItem('cartItems');
            
 $('.count').text(newCart);
  count = updateCart;
+           console.log(count)
   })
 });
 
@@ -176,6 +177,7 @@ let newCart = localStorage.getItem('cartItems');
            
 $('.count').text(newCart);
            count = updateCart;
+           console.log(count)
   })
   
 });
