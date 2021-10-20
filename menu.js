@@ -41,16 +41,21 @@ $('#tacos').on('click', function(){
 //   $('.course-opts').empty();
     console.log('clicking tacos')
   $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
   
   
   let mealDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
   <div class="course-info">
         <div class="course-name">Taco Bites</div>
         <div class="course-description">
@@ -84,9 +89,11 @@ $('#tacos').on('click', function(){
   </div>
   
     <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
+    </div>
+    
+      </div>
   `);
-  $('.course-opts').append(mealDetails);
+  $('.main').append(mealDetails);
   
 });
 
