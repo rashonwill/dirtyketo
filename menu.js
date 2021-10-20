@@ -103,7 +103,7 @@ $('#tacos').on('click', function(){
       </div>
   `);
   $('.main').append(tacoDetails);
-  $(tacoDetails).on('click','.btn', function(){
+  $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
 let updateCart = count + 1;
@@ -168,7 +168,7 @@ $('#hotdogs').on('click', function(){
   `);
   $('.main').append(hotDogDetails);
   
-  $(hotDogDetails).on('click', '.btn', function(){
+  $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
 let updateCart = count + 1;
