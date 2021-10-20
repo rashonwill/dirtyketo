@@ -257,8 +257,7 @@ $('#burgerbites').on('click', function(){
 
 });
 
-  
-     $('.btn').on('click', function(){
+      $('.course-opts .btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
   count++;
