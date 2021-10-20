@@ -107,7 +107,7 @@ $('#tacos').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
   count++;
-let bag = localStorage.setItem('cartItems', count);	
+let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
   })
@@ -167,7 +167,7 @@ $('#hotdogs').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
   count++;
-let bag = localStorage.setItem('cartItems', count);	
+let bag = localStorage.getItem('cartItems');		
 let spending = bag + 1;
 $('.count').text(spending);
   })
@@ -227,7 +227,7 @@ $('#guaca').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
   count++;
-let bag = localStorage.setItem('cartItems', count);	
+let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
   })
@@ -288,7 +288,7 @@ $('#burgerbites').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
   count++;
-let bag = localStorage.setItem('cartItems', count);	
+let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
   })
