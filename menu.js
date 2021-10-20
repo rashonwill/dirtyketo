@@ -514,7 +514,7 @@ $('#desserts').click(function renderDesserts(){
 //Menu Selection
 
 
-function renderTacoBites(){
+$('#tacos').click(function renderTacoBites(){
     $('.course').empty();
   $('.course-opts').empty();
   $('.main').empty();
@@ -565,7 +565,7 @@ function renderTacoBites(){
   `);
   $('.course-opts').append(mealDetails);
   
-};
+});
 
 // renderTacoBites();
 
