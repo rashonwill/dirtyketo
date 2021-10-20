@@ -37,12 +37,7 @@ let apps =  (`<div class="title"> Appetizers</div>
   $('.main').append(apps);
   
 $('#tacos').on('click', function(){
-//     $('.course').empty();
-//   $('.course-opts').empty();
-    console.log('clicking tacos')
   $('.main').empty();
-  
-  
   let mealDetails = (`
   
    <div class="selected-order">
@@ -99,20 +94,17 @@ $('#tacos').on('click', function(){
 
 
 
-$(apps).on('click', '#hotdogs', function(){
-//     $('.course').empty();
-//   $('.course-opts').empty();
-  $('.main').empty();
-  let course = (`
-  <div class="dinner">
+$('#hotdogs').on('click', function(){
+  $('.main').empty();  
+  let mealDetails = (`
+  
+    <div class="selected-order">
+  <div class="course">
+    <div class="dinner">
     <img src="https://www.patrickmaese.com/wp-content/uploads/2019/03/Chili-Cheese-Dogs-blog-1-500x500.jpg"/>  
       </div> 
-  
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
+  </div>
+  <div class="course-opts">
   <div class="course-info">
         <div class="course-name">Chilli Cheese Hot Dogs</div>
         <div class="course-description">
@@ -146,27 +138,26 @@ $(apps).on('click', '#hotdogs', function(){
   </div>
   
     <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
+  </div>
+  </div>
   `);
-  $('.course-opts').append(mealDetails);
+  $('.main').append(mealDetails);
   
   
 });
 
-$(apps).on('click', '#guaca', function(){
-   $('.course').empty();
-  $('.course-opts').empty();
+$('#guaca').on('click', function(){
+
   $('.main').empty();
-  let course = (`
-  <div class="dinner">
+  let mealDetails = (`
+  <div class="selected-order">
+  <div class="course">
+    <div class="dinner">
     <img src="https://theketoqueens.com/wp-content/uploads/2018/04/Low-Carb-Keto-Tortilla-Chips-Recipe-500x375.jpg"/>  
       </div> 
+  </div>
   
-  `);
-  $('.course').append(course);
-  
-  
-  let mealDetails = (`
+  <div class="course-opts">
   <div class="course-info">
         <div class="course-name">Guacamole & Chips</div>
         <div class="course-description">
@@ -200,27 +191,27 @@ $(apps).on('click', '#guaca', function(){
   </div>
   
     <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
+  </div>
+  </div>
   `);
-  $('.course-opts').append(mealDetails);
+  $('.main').append(mealDetails);
   
   
 });
 
 $(apps).on('click', '#burgerbites', function(){
-    $('.course').empty();
-  $('.course-opts').empty();
   $('.main').empty();
-  let course = (`
-  <div class="dinner">
-    <img src="https://www.foodnetwork.com/content/dam/images/food/video/9/94/947/9471/9471366.jpg"/>  
-      </div> 
-  
-  `);
-  $('.course').append(course);
   
   
   let mealDetails = (`
+  <div class="selected-order">
+  
+  <div class="course">
+   <div class="dinner">
+    <img src="https://www.foodnetwork.com/content/dam/images/food/video/9/94/947/9471/9471366.jpg"/>  
+      </div> 
+  </div>
+  <div class="course-opts">
   <div class="course-info">
         <div class="course-name">Bacon Cheese Burger Bites</div>
         <div class="course-description">
@@ -254,9 +245,10 @@ $(apps).on('click', '#burgerbites', function(){
   </div>
   
     <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
-  
+  </div>
+  </div>
   `);
-  $('.course-opts').append(mealDetails);
+  $('.main').append(mealDetails);
   
 });
   return apps;
