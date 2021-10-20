@@ -3,12 +3,11 @@ let count = 0;
 (function(){
   let spending = localStorage.getItem('cartItems')
   if (!spending){
-  $('count').text(0);
+  let value =  parseInt($(".count").text(),0);
   }else if (spending){
 $('.count').text(spending);
   }
 })();
-
 
 
 
