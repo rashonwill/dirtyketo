@@ -110,7 +110,8 @@ let updateCart = count + 1;
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
-$('.count').text(newCart);	
+$('.count').text(newCart);
+ count = updateCart;
   })
 });
 
@@ -171,7 +172,8 @@ let updateCart = count + 1;
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
-$('.count').text(newCart);	
+$('.count').text(newCart);
+           count = updateCart;
   })
   
 });
@@ -232,7 +234,8 @@ let updateCart = count + 1;
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
-$('.count').text(newCart);	
+$('.count').text(newCart);
+           count = updateCart;
   })
   
 });
@@ -290,11 +293,12 @@ $('#burgerbites').on('click', function(){
          $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-count++;
-let totalBag = localStorage.setItem('cartItems', count);
-let cart = localStorage.getItem('cartItems');           
+let updateCart = count + 1;          
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');           
            
-$('.count').text(cart);	
+$('.count').text(newCart);
+           count = updateCart;
   })
   
 
