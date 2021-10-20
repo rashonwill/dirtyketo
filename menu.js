@@ -1,5 +1,9 @@
 let count = 0;
-let bag = localStorage.setItem('cartItems', count);	
+
+$(function(){
+let spending = localStorage.getItem('cartItems')
+$('.count').text(spending);
+})();
 
 
 
