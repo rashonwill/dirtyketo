@@ -3,7 +3,7 @@ let count = 0;
 (function(){
   let spending = localStorage.getItem('cartItems')
   if (!spending){
-  localStorage.setItem('cartItems', 0)
+  localStorage.setItem('cartItems', parseInt(0))
   }else if (spending){
 $('.count').text(spending);
   }
@@ -106,7 +106,6 @@ $('#tacos').on('click', function(){
          $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-  count++;
 let bag = localStorage.getItem('cartItems');		
 let updatebag = bag + 1;
 let totalBag = localStorage.setItem('cartItems', updatebag);
