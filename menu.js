@@ -110,6 +110,7 @@ $('#tacos').on('click', function(){
 let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
+ let bag = localStorage.setItem('cartItems', spending);	
   })
 });
 
@@ -170,6 +171,7 @@ $('#hotdogs').on('click', function(){
 let bag = localStorage.getItem('cartItems');		
 let spending = bag + 1;
 $('.count').text(spending);
+           let bag = localStorage.setItem('cartItems', spending);	
   })
   
 });
@@ -230,6 +232,7 @@ $('#guaca').on('click', function(){
 let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
+          let bag = localStorage.setItem('cartItems', spending);	
   })
   
 });
@@ -291,6 +294,7 @@ $('#burgerbites').on('click', function(){
 let bag = localStorage.getItem('cartItems');	
 let spending = bag + 1;
 $('.count').text(spending);
+     let bag = localStorage.setItem('cartItems', spending);	
   })
   
 
