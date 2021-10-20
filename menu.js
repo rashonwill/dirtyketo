@@ -36,7 +36,7 @@ let apps =  (`<div class="title"> Appetizers</div>
   </div>`);
   $('.main').append(apps);
   
-  $(apps).on('click', '#tacos', function renderTacoBites(){
+  $(apps).on('click', '#tacos', function(){
     $('.course').empty();
   $('.course-opts').empty();
   $('.main').empty();
@@ -91,7 +91,7 @@ let apps =  (`<div class="title"> Appetizers</div>
 
 
 
-$(apps).on('click', '#hotdogs', function renderHotDogs(){
+$(apps).on('click', '#hotdogs', function(){
     $('.course').empty();
   $('.course-opts').empty();
   $('.main').empty();
@@ -145,7 +145,7 @@ $(apps).on('click', '#hotdogs', function renderHotDogs(){
   
 });
 
-$(apps).on('click', '#guaca', function renderGuacamole(){
+$(apps).on('click', '#guaca', function(){
    $('.course').empty();
   $('.course-opts').empty();
   $('.main').empty();
@@ -199,7 +199,7 @@ $(apps).on('click', '#guaca', function renderGuacamole(){
   
 });
 
-$(apps).on('click', '#burgerbites', function renderBurgerBites(){
+$(apps).on('click', '#burgerbites', function(){
     $('.course').empty();
   $('.course-opts').empty();
   $('.main').empty();
