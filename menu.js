@@ -1,4 +1,4 @@
-function renderAppetizers(){ 
+$('#appetizers').click(function renderAppetizers(){ 
   $('.main').empty();
 let apps =  (`<div class="title"> Appetizers</div>
   <div class="food-options">
@@ -36,13 +36,11 @@ let apps =  (`<div class="title"> Appetizers</div>
   </div>`);
   $('.main').append(apps);
   return apps;
-};
-
-renderAppetizers();
+});
 
 
 
-function renderBurgers(){
+$('#burgers').click(function renderBurgers(){
    $('.main').empty();
  let burgers =  (`<div class="title"> Burgers</div>
   <div class="food-options">
@@ -83,10 +81,10 @@ function renderBurgers(){
     $('.main').append(burgers);
   return burgers;
   
-};
+});
 
 
-function renderSteakAndShrimp(){
+$('#steak').click(function renderSteakAndShrimp(){
    $('.main').empty();
   let steakShrimp =  (`<div class="title"> Steak And Shrimp</div>
   <div class="food-options">
@@ -127,10 +125,10 @@ function renderSteakAndShrimp(){
       $('.main').append(steakShrimp);
   return steakShrimp;
   
-};
+});
 
 
-function renderWings(){
+$('#wings').click(function renderWings(){
    $('.main').empty();
   let wings =  (`<div class="title"> Wings</div>
   <div class="food-options">
@@ -171,9 +169,9 @@ function renderWings(){
       $('.main').append(wings);
   return wings;
   
-};
+});
 
-function renderSalads(){
+$('#salads').click(function renderSalads(){
    $('.main').empty();
   let salads =  (`<div class="title"> Salads</div>
   <div class="food-options">
@@ -214,10 +212,10 @@ function renderSalads(){
       $('.main').append(salads);
   return salads;
   
-};
+});
 
 
-function renderSides(){
+$('#sides').click(function renderSides(){
    $('.main').empty();
   let sides =  (`<div class="title"> Sides</div>
   <div class="food-options">
@@ -257,9 +255,9 @@ function renderSides(){
       $('.main').append(sides);
   return sides;
   
-};
+});
 
-function renderChacuterie(){
+$('#charcuterie').click(function renderChacuterie(){
    $('.main').empty();
   let platters =  (`<div class="title">Chacuterie</div>
   <div class="food-options">
@@ -299,11 +297,11 @@ function renderChacuterie(){
   </div>`);
       $('.main').append(platters);
   return platters;
-};
+});
 
 //NEXT
 
-function renderLunches(){
+$('#lunches').click(function renderLunches(){
    $('.main').empty();
   let lunches =  (`<div class="title">Daily Lunches</div>
   <div class="food-options">
@@ -343,9 +341,9 @@ function renderLunches(){
       $('.main').append(lunches);
   return lunches;
   
-};
+});
 
-function renderKids(){
+$('#kids').click(function renderKids(){
    $('.main').empty();
   let kids=  (`<div class="title">Kids Menu</div>
   <div class="food-options">
@@ -384,9 +382,9 @@ function renderKids(){
   </div>`);
       $('.main').append(kids);
   return kids;
-};
+});
 
-function renderDesserts(){
+$('#desserts').click(function renderDesserts(){
    $('.main').empty();
   let desserts =  (`<div class="title">Desserts</div>
   <div class="food-options">
@@ -426,10 +424,10 @@ function renderDesserts(){
     $('.main').append(desserts);
   return desserts;
   
-};
+});
 
 //TO DO 
-function renderBeverages(){
+$('#beverages').click(function renderBeverages(){
    $('.main').empty();
   let drinks =  (`<div class="title"> Beverages</div>
   <div class="food-options">
@@ -468,10 +466,10 @@ function renderBeverages(){
       $('.main').append(drinks);
   return drinks;
   
-};
+});
 
 //TO DO
-function renderDeals(){
+$('#deals').click(function renderDeals(){
    $('.main').empty();
   let deals =  (`<div class="title"> Meal Deals</div>
   <div class="food-options">
@@ -510,6 +508,6 @@ function renderDeals(){
       $('.main').append(deals);
   return deals;
   
-};
+});
 
 
