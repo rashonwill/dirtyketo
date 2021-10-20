@@ -199,7 +199,7 @@ $('#guaca').on('click', function(){
   
 });
 
-$(apps).on('click', '#burgerbites', function(){
+$('#burgerbites').on('click', function(){
   $('.main').empty();
   
   
