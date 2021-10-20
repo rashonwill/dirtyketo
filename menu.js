@@ -37,8 +37,8 @@ let apps =  (`<div class="title"> Appetizers</div>
   $('.main').append(apps);
   
   $(apps).on('click', '#tacos', function(){
-    $('.course').empty();
-  $('.course-opts').empty();
+//     $('.course').empty();
+//   $('.course-opts').empty();
   $('.main').empty();
   let course = (`
   <div class="dinner">
@@ -92,8 +92,8 @@ let apps =  (`<div class="title"> Appetizers</div>
 
 
 $(apps).on('click', '#hotdogs', function(){
-    $('.course').empty();
-  $('.course-opts').empty();
+//     $('.course').empty();
+//   $('.course-opts').empty();
   $('.main').empty();
   let course = (`
   <div class="dinner">
