@@ -235,6 +235,7 @@ $('#guaca').on('click', function(){
   count++;
 let bag = localStorage.getItem('cartItems');		
 let updatebag = bag + 1;
+           console.log(updatebag)
 let totalBag = localStorage.setItem('cartItems', updatebag);
 let cart = localStorage.getItem('cartItems');           
            
