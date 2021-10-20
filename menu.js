@@ -39,6 +39,7 @@ let apps =  (`<div class="title"> Appetizers</div>
   $(apps).on('click', '#tacos', function(){
 //     $('.course').empty();
 //   $('.course-opts').empty();
+    console.log('clicking tacos')
   $('.main').empty();
   let course = (`
   <div class="dinner">
