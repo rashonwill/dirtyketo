@@ -1,6 +1,6 @@
 let count = 0;
 
-$(function(){
+(function(){
 let spending = localStorage.getItem('cartItems')
 $('.count').text(spending);
 })();
