@@ -1,3 +1,9 @@
+let count = 0;
+
+
+
+
+
 $('#appetizers').click(function renderAppetizers(){ 
   $('.main').empty();
 let apps =  (`<div class="title"> Appetizers</div>
@@ -89,7 +95,14 @@ $('#tacos').on('click', function(){
       </div>
   `);
   $('.main').append(mealDetails);
-  
+   $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+  count++;
+let bag = localStorage.setItem('cartItems', count);	
+let spending = localStorage.getItem('cartItems')
+$('.count').text(spending);
+  })
 });
 
 
@@ -142,7 +155,14 @@ $('#hotdogs').on('click', function(){
   </div>
   `);
   $('.main').append(mealDetails);
-  
+   $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+  count++;
+let bag = localStorage.setItem('cartItems', count);	
+let spending = localStorage.getItem('cartItems')
+$('.count').text(spending);
+  })
   
 });
 
@@ -196,7 +216,14 @@ $('#guaca').on('click', function(){
   `);
   $('.main').append(mealDetails);
   
-  
+   $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+  count++;
+let bag = localStorage.setItem('cartItems', count);	
+let spending = localStorage.getItem('cartItems')
+$('.count').text(spending);
+  })
 });
 
 $('#burgerbites').on('click', function(){
@@ -250,7 +277,17 @@ $('#burgerbites').on('click', function(){
   `);
   $('.main').append(mealDetails);
   
+ $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+  count++;
+let bag = localStorage.setItem('cartItems', count);	
+let spending = localStorage.getItem('cartItems')
+$('.count').text(spending);
+  })
+  
 });
+
   return apps;
 });
 
