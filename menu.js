@@ -4,6 +4,7 @@ let count = 0;
   let spending = localStorage.getItem('cartItems')
   if (!spending){
   let value =  parseInt($(".count").text(),0);
+    $('.count').text(value);
   }else if (spending){
 $('.count').text(spending);
   }
