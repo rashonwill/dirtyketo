@@ -351,7 +351,7 @@ $('.count').text(newCart);
   </div>`);
     $('.main').append(burgers);
 //   return burgers;
-    
+  })
    
 });
   
