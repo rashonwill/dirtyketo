@@ -356,7 +356,7 @@ $('.count').text(newCart);
     
   $('#plain').on('click', function(){
   $('.main').empty();
-  let brugerDetails = (`
+  let burgerDetails = (`
   
    <div class="selected-order">
    
@@ -423,7 +423,7 @@ $('.count').text(newCart);
 
 $('#bigboy').on('click', function(){
   $('.main').empty();
-  let brugerDetails = (`
+  let burgerDetails = (`
   
    <div class="selected-order">
    
@@ -491,7 +491,7 @@ $('.count').text(newCart);
 
 $('#allyouneed').on('click', function(){
   $('.main').empty();
-  let brugerDetails = (`
+  let burgerDetails = (`
   
    <div class="selected-order">
    
@@ -559,7 +559,7 @@ $('.count').text(newCart);
 
 $('#wraps').on('click', function(){
   $('.main').empty();
-  let brugerDetails = (`
+  let burgerDetails = (`
   
    <div class="selected-order">
    
