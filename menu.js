@@ -2531,7 +2531,275 @@ $('#kids').click(function renderKids(){
        
   </div>`);
       $('.main').append(kids);
-  return kids;
+   
+   $('#pizza').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.thedietchefs.com/wp-content/uploads/2019/04/Keto-Pizza-in-10-MINUTES-This-the-is-BEST-Pizza-for-keto-SO-MUCH-BETTER-than-Fat-head-Crust-Pizza.png"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Pizza Slice </div>
+        <div class="course-description">
+          <p> Large slice of pepperoni pizza, with crust made of cheese. </p>
+        </div>
+        <div class="course-price">$5.99 | 1 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+$('#nuggets').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://webknox.com/recipeImages/983213-556x370.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Chicken Nuggets</div>
+        <div class="course-description">
+          <p> 5pc Chicken Nuggets </p>
+        </div>
+        <div class="course-price">$4.99 | 15 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#fishsticks').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.tasteaholics.com/wp-content/uploads/2019/01/Crispy-Baked-Fish-Sticks-feature.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Fishsticks</div>
+        <div class="course-description">
+          <p> 6 Crunchy fishsticks</p>
+        </div>
+        <div class="course-price">$4.99 | 8 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#sandwhich').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.officiallyglutenfree.com/wp-content/uploads/2020/03/Low-Carb-Chicken-Club-Sandwich-17.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Club Sandwhiches</div>
+        <div class="course-description">
+          <p> 4 lettuce wrap club sandwhiches, topped with cheese, turkey, ham, and bacon.</p>
+        </div>
+        <div class="course-price">$4.99 | 2 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+})
+   });
 });
 
 $('#desserts').click(function renderDesserts(){
@@ -2572,7 +2840,276 @@ $('#desserts').click(function renderDesserts(){
        
   </div>`) 
     $('.main').append(desserts);
-  return desserts;
+  
+  
+     $('#cheesecake').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.fittoservegroup.com/wp-content/uploads/2020/02/keto-blueberry-cheesecake-on-white-plate-2-2-720x720.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Blueberry Cheesecake</div>
+        <div class="course-description">
+          <p> Slice of blueberry cheesecake. </p>
+        </div>
+        <div class="course-price">$5.99 | 9 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+$('#doublechocolate').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.thespruceeats.com/thmb/hSpbo9r3zma8clXXd-mXeqzu7l4=/1332x1332/smart/filters:no_upscale()/keto-chocolate-cookies-4769153-hero-01-a4287551d0eb4d86a4bc3bb0afb6c6d8.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Double Chocolate Chip</div>
+        <div class="course-description">
+          <p> 4 large double chocolate chip cookies. </p>
+        </div>
+        <div class="course-price">$4.99 | 4 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#classic').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.ketoconnect.net/wp-content/uploads/2020/12/close-up-pile-of-cookies-with-sea-salt.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Classic Chocolate Chip Cookies.</div>
+        <div class="course-description">
+          <p> 4 large classic chocolate chip cookies.</p>
+        </div>
+        <div class="course-price">$4.99 | 4 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#brownie').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://joyfilledeats.com/wp-content/uploads/2017/10/keto-vanilla-ice-cream-1-500x375.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Brownie and Vanilla Ice Cream</div>
+        <div class="course-description">
+          <p> Keto brownie, with a scoop of Halo Top, vanilla ice cream.</p>
+        </div>
+        <div class="course-price">$6.99 | 6 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+})
+   });
   
 });
 
