@@ -108,6 +108,7 @@ $('#tacos').on('click', function(){
   $('.count').empty();
 let updateCart = count + 1;
   count = updateCart
+    console.log(updateCart, count)
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
@@ -173,6 +174,7 @@ $('#hotdogs').on('click', function(){
   $('.count').empty();
 let updateCart = count + 1;
     count = updateCart
+     console.log(updateCart, count)
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
