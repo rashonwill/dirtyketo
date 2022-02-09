@@ -310,16 +310,8 @@ $('.count').text(newCart);
   })
   
 });
-
-
   
-  
-  return apps;
-});
-
-
-
-$('#burgers').click(function renderBurgers(){
+  $('#burgers').click(function renderBurgers(){
    $('.main').empty();
  let burgers =  (`<div class="title"> Burgers</div>
   <div class="food-options">
@@ -632,6 +624,16 @@ $('.count').text(newCart);
   })
 
 });
+
+
+
+  
+  
+  return apps;
+});
+
+
+
 
 
 $('#steak').click(function renderSteakAndShrimp(){
