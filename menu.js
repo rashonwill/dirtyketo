@@ -2490,7 +2490,7 @@ $('#cabbage').on('click', function(){
 $('.count').text(newCart);
   count = newCount
     
-console.log(newCount))
+console.log(newCount)
 
   })
 
