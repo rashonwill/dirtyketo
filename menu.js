@@ -105,7 +105,7 @@ $('#tacos').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
- let currentCart = localStorage.getItem('cartItems')
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
  console.log(currentCart)
  let itemCount = currentCart
  console.log(itemCount)
