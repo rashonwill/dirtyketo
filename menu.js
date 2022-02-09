@@ -10,6 +10,16 @@ $('.count').text(spending);
 })();
 
 
+(function(){
+  let cartTot = localStorage.getItem('cartTotal')
+  if (!cartTot){
+  localStorage.setItem('cartTotal', 0.00)
+  $('.modal-body').text('Your cart is Empty')  
+  }else if (cartTot){
+localStorage.setItem('cartTotal', cartTotal)
+  }
+})();
+
 
 
 $('#appetizers').click(function renderAppetizers(){ 
