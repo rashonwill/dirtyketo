@@ -1,4 +1,5 @@
 let count = 0;
+let cartTotal = 0.00;
 (function(){
   let spending = localStorage.getItem('cartItems')
   if (!spending){
