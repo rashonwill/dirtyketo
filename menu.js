@@ -106,11 +106,11 @@ $('#tacos').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
  let currentCart = parseInt(localStorage.getItem('cartItems'))
- console.log(currentCart)
+
  let itemCount = currentCart
- console.log(itemCount)
+
  let newCount = itemCount + 1   
-console.log(newCount)
+
  let totalBag = localStorage.setItem('cartItems', newCount);
  let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
@@ -176,11 +176,11 @@ $('#hotdogs').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
  let currentCart = parseInt(localStorage.getItem('cartItems'))
- console.log(currentCart)
+
  let itemCount = currentCart
- console.log(itemCount)
+
  let newCount = itemCount + 1   
-console.log(newCount)
+
  let totalBag = localStorage.setItem('cartItems', newCount);
  let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
@@ -243,13 +243,18 @@ $('#guaca').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
- let currentCart = localStorage.getItem('cartItems');       
-let updateCart = currentCart + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');           
-           
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
   })
  
   
@@ -308,12 +313,18 @@ $('#burgerbites').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');           
-           
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
   })
   
 })
@@ -417,12 +428,18 @@ $('.count').text(newCart);
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -484,12 +501,18 @@ $('#bigboy').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -552,12 +575,18 @@ $('#allyouneed').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -620,13 +649,18 @@ $('#wraps').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
-       
-  console.log(count)
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 })
    });
  });
@@ -728,12 +762,18 @@ $('#steak').click(function renderSteakAndShrimp(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -795,12 +835,18 @@ $('#broccoli').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -863,12 +909,18 @@ $('#scampi').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-      
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -931,12 +983,18 @@ $('#steakbowl').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -1040,12 +1098,18 @@ $('#wings').click(function renderWings(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1107,12 +1171,18 @@ $('#bbq').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1175,12 +1245,18 @@ $('#lemon').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-      
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1243,12 +1319,18 @@ $('#parmesan').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -1351,12 +1433,18 @@ $('#salads').click(function renderSalads(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-      
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1418,12 +1506,18 @@ $('#blt').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1486,12 +1580,18 @@ $('#tacosalad').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1554,12 +1654,18 @@ $('#kalesalad').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -1653,12 +1759,18 @@ $('#sides').click(function renderSides(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1712,13 +1824,18 @@ $('#mash').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
-      
-  console.log(count)
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
   })
 
 });
@@ -1772,12 +1889,18 @@ $('#mac').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -1833,12 +1956,18 @@ $('#greenbeans').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-       
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -1942,12 +2071,18 @@ $('#charcuterie').click(function renderChacuterie(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
- 
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2009,12 +2144,18 @@ $('#fulfillment').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2077,12 +2218,18 @@ $('#kiss').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-     
-  console.log(count)
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2145,13 +2292,18 @@ $('#berry').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-
-  console.log(count)
-
+  count = newCount
+    
+console.log(newCount)
 })
    });
 });
@@ -2254,12 +2406,18 @@ $('#lunches').click(function renderLunches(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2321,12 +2479,18 @@ $('#cabbage').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
- 
-  console.log(count)
+  count = newCount
+    
+console.log(newCount))
 
   })
 
@@ -2389,13 +2553,18 @@ $('#meatballs').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-
-  console.log(count)
-
+  count = newCount
+    
+console.log(newCount)
   })
 
 });
@@ -2457,12 +2626,18 @@ $('#meatloaf').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -2564,13 +2739,18 @@ $('#kids').click(function renderKids(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-
-  console.log(count)
-
+  count = newCount
+    
+console.log(newCount)
   })
 
 });
@@ -2631,12 +2811,18 @@ $('#nuggets').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2699,12 +2885,18 @@ $('#fishsticks').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2767,12 +2959,18 @@ $('#sandwich').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
 })
    });
@@ -2867,12 +3065,18 @@ $('#desserts').click(function renderDesserts(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2927,12 +3131,18 @@ $('#doublechocolate').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -2988,12 +3198,18 @@ $('#classic').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
-$('.count').text(newCart);
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
 
-  console.log(count)
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+  count = newCount
+    
+console.log(newCount)
 
   })
 
@@ -3049,13 +3265,18 @@ $('#brownie').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-let updateCart = count + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ let currentCart = parseInt(localStorage.getItem('cartItems'))
+
+ let itemCount = currentCart
+
+ let newCount = itemCount + 1   
+
+ let totalBag = localStorage.setItem('cartItems', newCount);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-
-  console.log(count)
-
+  count = newCount
+    
+console.log(newCount)
 })
    });
   
