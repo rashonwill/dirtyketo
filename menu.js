@@ -352,8 +352,9 @@ $('.count').text(newCart);
 </div>     
        
   </div>`);
-    $('.main').append(burgers);
-     $('#plain').on('click', function(){
+  $('.main').append(burgers);
+    
+  $('#plain').on('click', function(){
   $('.main').empty();
   let brugerDetails = (`
   
@@ -619,21 +620,12 @@ $('.count').text(newCart);
        count = cartNow;
   console.log(count)
 
-  })
-});
-    
-    
-  });
+})
+   });
+ });
    
 
-  
-
-
-
-
-
-
-
+ 
 $('#steak').click(function renderSteakAndShrimp(){
    $('.main').empty();
   let steakShrimp =  (`<div class="title"> Steak And Shrimp</div>
