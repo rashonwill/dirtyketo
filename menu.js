@@ -2735,7 +2735,7 @@ $('.count').text(newCart);
 });
 
 
-$('#sandwhich').on('click', function(){
+$('#sandwich').on('click', function(){
   $('.main').empty();
   let burgerDetails = (`
   
