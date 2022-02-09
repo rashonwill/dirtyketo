@@ -110,7 +110,7 @@ let updateCart = currentCart + 1;
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  console.log(count)
+  console.log(currentCart, updateCart)
 
   })
 
@@ -176,7 +176,7 @@ let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
-  console.log(count)
+   console.log(currentCart, updateCart)
   })
 
 });
