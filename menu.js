@@ -350,12 +350,9 @@ $('.count').text(newCart);
        
   </div>`);
     $('.main').append(burgers);
-  return burgers;
-  
-});
-
-
-$('#plain').on('click', function(){
+//   return burgers;
+    
+    $('#plain').on('click', function(){
   $('.main').empty();
   let brugerDetails = (`
   
@@ -629,8 +626,13 @@ $('.count').text(newCart);
 
   
   
-  return apps;
+
 });
+
+  
+});
+
+
 
 
 
