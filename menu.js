@@ -1621,14 +1621,6 @@ $('#sides').click(function renderSides(){
         <div class="course-price">$3.99 | 3 carbs</div>
       </div>
       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
   </div>
       
        <div class="form-group">
@@ -1688,14 +1680,6 @@ $('#mash').on('click', function(){
         <div class="course-price">$2.99 | 1 carbs</div>
       </div>
       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
   </div>
       
        <div class="form-group">
@@ -1756,14 +1740,6 @@ $('#mac').on('click', function(){
         <div class="course-price">$2.99 | 2 carbs</div>
       </div>
       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
   </div>
       
        <div class="form-group">
@@ -1824,14 +1800,7 @@ $('#greenbeans').on('click', function(){
         <div class="course-price">$2.99 | 4 carbs</div>
       </div>
       <div class="form-group">
-    <label for="exampleFormControlSelect1">Select A Side</label>
-    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
-      <option>No Thanks</option>
-      <option>Jimca Fries</option>
-       <option>Cauliflower Mac n Cheese</option>
-      <option>Loaded Cauliflower Mashed</option>
-      <option>Bacon Greenbeans</option>
-    </select>
+      
   </div>
       
        <div class="form-group">
