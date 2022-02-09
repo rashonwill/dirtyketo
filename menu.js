@@ -1,8 +1,8 @@
-
+let count = 0;
 (function(){
   let spending = localStorage.getItem('cartItems')
   if (!spending){
-  localStorage.setItem('cartItems', 0)
+  localStorage.setItem('cartItems', count)
   }else if (spending){
 $('.count').text(spending);
   }
@@ -105,10 +105,9 @@ $('#tacos').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
- let currentCart = localStorage.getItem('cartItems');       
-let updateCart = currentCart + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
-let newCart = localStorage.getItem('cartItems');                      
+ count++
+ let totalBag = localStorage.setItem('cartItems', count);
+ let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
   console.log(currentCart, updateCart)
 
@@ -170,9 +169,8 @@ $('#hotdogs').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
- let currentCart = localStorage.getItem('cartItems');       
-let updateCart = currentCart + 1;
-let totalBag = localStorage.setItem('cartItems', updateCart);
+ count++
+let totalBag = localStorage.setItem('cartItems', count);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
