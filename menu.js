@@ -975,8 +975,276 @@ $('#wings').click(function renderWings(){
 </div>     
        
   </div>`);
-      $('.main').append(wings);
-  return wings;
+   $('.main').append(wings);
+  
+  $('#buffalo').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.allchickenrecipes.com/wp-content/uploads/2019/12/keto-chicken-wings.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Buffalo Wings</div>
+        <div class="course-description">
+          <p> Spicy Buffalo, wings tossed in our house sauce. </p>
+        </div>
+        <div class="course-price">$9.99 | 5 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+$('#bbq').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://c9u8e9q4.rocketcdn.me/wp-content/uploads/2021/06/Air-Fryer-BBQ-Chicken-Wings-2.jpg-V2-vertical-1200-800x1200.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">BBQ Wings</div>
+        <div class="course-description">
+          <p> Wings tossed in a keto friendly bbq sauce. </p>
+        </div>
+        <div class="course-price">$9.99 | 3 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#lemon').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://homemadehooplah.com/wp-content/uploads/2019/05/lemon-pepper-chicken-wings-1.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Lemon Pepper Wings</div>
+        <div class="course-description">
+          <p>  Crispy lemon pepper wings. </p>
+        </div>
+        <div class="course-price">$9.99 | 0 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#parmesan').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://theketocookbook.com/wp-content/uploads/2018/05/wings-1040x1300.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Garlic Parmesan</div>
+        <div class="course-description">
+          <p> Cripsy Wings, tossed in garlic parmesan. </p>
+        </div>
+        <div class="course-price">$13.99 | 1 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+})
+   });
   
 });
 
