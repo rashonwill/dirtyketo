@@ -1,5 +1,5 @@
 let count = 0;
-let cartTotals = 0.00;
+let cartTotal = 0.00;
 (function(){
   let spending = localStorage.getItem('cartItems')
   if (!spending){
@@ -11,13 +11,8 @@ $('.count').text(spending);
 
 
 (function(){
-  let cartTot = localStorage.getItem('cartTotal')
-  if (!cartTot){
-  localStorage.setItem('cartTotal', 0.00)
+  let cartTot = localStorage.setItem('cartTotal', cartTotal)
   $('.modal-body').text('Your cart is empty')  
-  }else if (cartTot){
-localStorage.setItem('cartTotal', cartTotal)
-  }
 })();
 
 
