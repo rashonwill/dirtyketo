@@ -505,7 +505,7 @@ $('#allyouneed').on('click', function(){
 
 
   <div class="course-info">
-        <div class="course-name">The Big Boy</div>
+        <div class="course-name">The All You Need</div>
         <div class="course-description">
           <p>  Keto friendly bun, topped with lettuce, fresh onions, and cheese. </p>
         </div>
@@ -665,7 +665,274 @@ $('#steak').click(function renderSteakAndShrimp(){
        
   </div>`);
       $('.main').append(steakShrimp);
-  return steakShrimp;
+  $('#garlicshrimp').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.aymag.com/wp-content/uploads/2020/05/Garlic-Butter-Steak-Shrimp-Recipe-IMAGE-1.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Steak and Garlic Shrimp</div>
+        <div class="course-description">
+          <p> Our delicious marinated steak grilled over a flame, paired with our famount garlic butter shrimp. </p>
+        </div>
+        <div class="course-price">$21.99 | 10 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+$('#broccoli').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.noshtastic.com/wp-content/uploads/2018/08/low-carb-beef-and-broccoli-sq-1-of-1.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Steak and Broccoli</div>
+        <div class="course-description">
+          <p> Our delicious marinated steak grilled over a flame, paired with steam broccoli. </p>
+        </div>
+        <div class="course-price">$17.99 | 4 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#scampi').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://www.justataste.com/wp-content/uploads/2016/06/skinny-shrimp-scampi-photo.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Shrimp Scampi</div>
+        <div class="course-description">
+          <p>  Well seasone, shrimped layed over a bed of zucchini noodles.</p>
+        </div>
+        <div class="course-price">$10.99 | 5 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+  })
+
+});
+
+
+$('#steakbowl').on('click', function(){
+  $('.main').empty();
+  let burgerDetails = (`
+  
+   <div class="selected-order">
+   
+     <div class="course">
+  <div class="dinner">
+    <img src="https://dadwithapan.com/wp-content/uploads/2017/08/Steak-Shrimp-Paleo-Bowl-1-656x875.jpg"/>  
+      </div> 
+  </div>
+
+    <div class="course-opts">
+
+
+  <div class="course-info">
+        <div class="course-name">Shrimp and Steak Bowl with Veggies</div>
+        <div class="course-description">
+          <p> Our famously marinated steak and sauted shrimp paired with a vegetable melody. </p>
+        </div>
+        <div class="course-price">$13.99 | 4 carbs</div>
+      </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Side</label>
+    <select style="width: 45vw" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Jimca Fries</option>
+       <option>Cauliflower Mac n Cheese</option>
+      <option>Loaded Cauliflower Mashed</option>
+      <option>Bacon Greenbeans</option>
+    </select>
+  </div>
+      
+       <div class="form-group">
+    <label for="exampleFormControlSelect1">Select A Beverage</label>
+    <select style="width: 45vw; color:#343a40" class="form-control" id="exampleFormControlSelect1">
+      <option>No Thanks</option>
+      <option>Coke Zero</option>
+      <option>Diet Coke</option>
+      <option>Dr.Pepper Zero</option>
+      <option>Unsweetend Tea</option>
+      <option>Bottled Water</option>
+      <option>House Lemondade</option>
+      <option>Keto Coffee</option>
+    </select>
+  </div>
+  
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 45vw; background: red; margin-top: 60px;">Add to Cart</button>
+    </div>
+    
+      </div>
+  `);
+  $('.main').append(burgerDetails);
+  $('.btn').on('click', function(){
+  $('.btn').text('Added to Cart!');	
+  $('.count').empty();
+let updateCart = count + 1;
+let totalBag = localStorage.setItem('cartItems', updateCart);
+let newCart = localStorage.getItem('cartItems');                      
+$('.count').text(newCart);
+       count = cartNow;
+  console.log(count)
+
+})
+   });
   
 });
 
