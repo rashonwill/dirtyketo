@@ -109,7 +109,7 @@ $('#tacos').on('click', function(){
  let totalBag = localStorage.setItem('cartItems', count);
  let newCart = localStorage.getItem('cartItems');                      
 $('.count').text(newCart);
-  console.log(currentCart, updateCart)
+  console.log(count)
 
   })
 
@@ -174,7 +174,7 @@ let totalBag = localStorage.setItem('cartItems', count);
 let newCart = localStorage.getItem('cartItems');           
            
 $('.count').text(newCart);
-   console.log(currentCart, updateCart)
+   console.log(count)
   })
 
 });
