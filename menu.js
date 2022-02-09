@@ -171,8 +171,8 @@ $('#hotdogs').on('click', function(){
   $('.btn').on('click', function(){
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
-    console.log(count)
 let updateCart = count + 1;
+    count = updateCart
 let totalBag = localStorage.setItem('cartItems', updateCart);
 let newCart = localStorage.getItem('cartItems');           
            
