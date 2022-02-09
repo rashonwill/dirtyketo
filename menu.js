@@ -624,7 +624,7 @@ $('.count').text(newCart);
 
 
 });
-
+});
   
 
 
