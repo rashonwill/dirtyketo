@@ -1,13 +1,13 @@
-// let count = 0;
-// let cartTotal = 0.00;
-// (function(){
-//   let spending = localStorage.getItem('cartCount')
-//   if (!spending){
-//   localStorage.setItem('cartCount', count)
-//   }else if (spending){
-// $('.count').text(spending);
-//   }
-// })();
+let count = 0;
+let cartTotal = 0.00;
+(function(){
+  let spending = localStorage.getItem('cartCount')
+  if (!spending){
+  localStorage.setItem('cartCount', count)
+  }else if (spending){
+$('.count').text(spending);
+  }
+})();
 
 
 // (function(){
