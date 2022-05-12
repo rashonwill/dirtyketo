@@ -5,7 +5,7 @@
 function renderSelection(){
   $(".course").empty();
   $(".course-opts").empty();
- let item = JSON.parse(localStorage.getItem('mealSelection'))
+ let item = localStorage.getItem('mealSelection')
  
  let itemPicture = $(`
   <div class="dinner">
