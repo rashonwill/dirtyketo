@@ -16,6 +16,7 @@ $('.count').text(spending);
   if (spending >= 1){
     let cartItems = JSON.parse(localStorage.getItem('MyItems'))
     items.push(cartItems)
+	  console.log(items)
     cartItems.forEach(async function(items){
         let food = $(`
        <tr class="myPurchase">
