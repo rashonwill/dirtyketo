@@ -31,3 +31,9 @@ return cards;
 
 }
 
+                       
+ function bootstrap(){
+ foodCategories();
+}
+
+bootstrap();
