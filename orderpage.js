@@ -28,7 +28,7 @@ $('.count').text(spending);
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
     </tr> 
 `).data('cartItems', cartItems)
-	$('.modal-body').append(cartItems) 
+	$('.modal-body tbody').append(cartItems) 
    })
 
   }else if(spending == 0){
