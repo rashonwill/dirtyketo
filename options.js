@@ -80,9 +80,8 @@ function renderApps(){
  $(".btn").on('click', function(event){
    event.preventDefault();
    let selected = $(this).closest('.card').data('item')
-   console.log(selected)
    localStorage.setItem('mealSelection', selected)
-//      window.location = "/orderpage";    
+     window.location = "/orderpage";    
 });
 
 
@@ -112,16 +111,20 @@ const menuItemsBurgers = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
@@ -150,16 +153,18 @@ const menuItemsSteakShrimp = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
-
 
 }
 
@@ -186,13 +191,16 @@ const menuItemsWings = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
 
@@ -222,7 +230,7 @@ const menuItemsSalads = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
@@ -258,15 +266,19 @@ const menuItemsSides = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
@@ -295,15 +307,19 @@ const menuItemsCharcuterie = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
@@ -331,15 +347,19 @@ const menuItemsLunches = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
@@ -368,15 +388,19 @@ const menuItemsKidsMenu = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
@@ -403,15 +427,19 @@ const menuItemsDesserts = [
   </div>
 </div>  
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   localStorage.setItem('mealSelection', selected)
      window.location = "/orderpage";    
 });
+
 
 
 }
