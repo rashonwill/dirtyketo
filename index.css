@@ -138,3 +138,141 @@ footer {
 footer ul li {
   margin-top: 100px;
 }
+
+
+.modal-body{
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: none;
+  flex: .9;
+}
+
+.shopping-bag{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 10;
+  text-align: center;
+  font-family: "Teko";	
+
+}
+
+.shopping-bag::-webkit-scrollbar{
+    width: 12px;
+  }
+
+.shopping-bag::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #FDFBF9; 
+  background-color: #FDFBF9;
+}
+
+.shopping-bag::-webkit-scrollbar-thumb {
+  background: #0C1559; 
+}
+
+.shopping-bag::-webkit-scrollbar-corner {
+background: #FDFBF9;
+}
+
+#first{
+margin-left: -180px;
+
+}
+
+.shopping-bag table {
+  color: #0C1559;
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns:
+    
+ minmax(300px, 1fr)
+    minmax(0, 1fr)      
+    minmax(0, 1fr)
+    minmax(150px, 1fr)
+   
+    minmax(0, 1fr)
+    minmax(0, 1fr) 
+    minmax(200px, 1fr) 
+    minmax(0, 1fr)
+   
+    minmax(0, 1fr)	  
+	  
+    
+}
+
+
+.shopping-bag #image{
+width: 100px;
+height: 100px;	
+}
+
+.shopping-bag .pic{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;	
+}
+
+.shopping-bag thead,
+.shopping-bag tbody,
+.shopping-bag tr {
+  display: contents;
+}
+
+.shopping-bag th,
+.shopping-bag td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Teko";
+  
+}
+
+.shopping-bag th {
+  position: sticky;
+  background: #343a40;
+  text-align: center;
+  font-weight: normal;
+  font-size: 21px;
+  color: #FDFBF9;
+  margin-left: -50px;
+  margin-top: -40px;
+  padding: 50px;
+  height: 10px;	
+ letter-spacing: .1rem;	
+}
+
+.shopping-bag td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0C1559;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.shopping-bag td:last-child {
+  width: 8rem;
+}
+
+.shopping-bag th:last-child {
+  width: 5rem;
+}
+
+.shopping-bag .fa-times-circle-o{
+  font-size: 20px;
+  color: #B2022F;
+  cursor: pointer;
+}
+
+.item-total{
+margin-left: -50px;
+font-size: 30px;	
+}
+
+.increase{
+font-size: 22px;
+}
