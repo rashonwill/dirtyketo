@@ -1,6 +1,6 @@
 function renderSelection(){
   $(".course").empty();
-  $(".course-opts").empty();
+  $(".details").empty();
  let item = localStorage.getItem('mealSelection')
  
  let itemPicture = $(`
@@ -23,7 +23,7 @@ function renderSelection(){
 
  
  `).data('item', item)
- $(".course-opts").prepend(itemDetails);
+ $(".details").append(itemDetails);
 
  
  
