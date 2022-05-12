@@ -27,7 +27,7 @@ return cards;
  })
  
  $(".card").on('click', function(){
-  let option = $(this).closest('.card').data('menuCategories')
+  let option = $(this).closest('.card')
   console.log(option)
   window.location = "/options";    
 });
