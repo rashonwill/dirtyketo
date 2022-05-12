@@ -1,5 +1,5 @@
 (function() {
-  $('.main').empty();
+  $('.food-options').empty();
   let selected = JSON.parse(localStorage.getItem('optionID'))
   
   if(selected === 1){
@@ -71,7 +71,7 @@ function renderApps(){
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -107,7 +107,7 @@ const menuItemsBurgers = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -143,7 +143,7 @@ const menuItemsSteakShrimp = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -178,7 +178,7 @@ const menuItemsWings = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -213,7 +213,7 @@ const menuItemsSalads = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -248,7 +248,7 @@ const menuItemsSides = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -284,7 +284,7 @@ const menuItemsCharcuterie = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -319,7 +319,7 @@ const menuItemsLunches = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -355,7 +355,7 @@ const menuItemsKidsMenu = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
@@ -389,7 +389,7 @@ const menuItemsDesserts = [
   
   `)
     
-   $('.main').append(cards);
+   $('.food-options').append(cards);
     return cards;
   })
   
