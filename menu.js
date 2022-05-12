@@ -129,7 +129,7 @@ $('.count').text(newCart);
     
     
 let itemDetails = $(this).closest('.course-info').find('.course-name')
-console.log(itemPurchase)
+console.log(itemDetails)
 let itemPic= $(this).closest('.dinner').find('img')
 console.log(itemPic)
 	
