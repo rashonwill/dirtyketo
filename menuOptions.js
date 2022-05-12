@@ -31,7 +31,7 @@ return cards;
   let option = $(this).closest('.card')
   let cardData = option.data();
   console.log(cardData)
-  window.location = "/options";    
+//   window.location = "/options";    
 });
 }
 
