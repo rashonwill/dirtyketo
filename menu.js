@@ -113,6 +113,7 @@ $('#tacos').on('click', function(){
   `);
   $('.main').append(tacoDetails);
   $('.btn').on('click', function(){
+    
   $('.btn').text('Added to Cart!');	
   $('.count').empty();
  let currentCart = parseInt(localStorage.getItem('cartItems'))
@@ -126,7 +127,37 @@ $('#tacos').on('click', function(){
 $('.count').text(newCart);
   count = newCount
     
-console.log(newCount)
+    
+let itemPurchase = $(this).closest('.course-info')
+console.log(itemPurchase)
+	
+// let newItem = {
+// productid: products.id,
+// name: products.prod_name,
+// description: products.prod_description,	
+// vendorid: products.vendorid,
+// vendor: products.vendorname,	
+// quantity: 1,
+// color: products.prod_color1 ? products.prod_color1 : 'One Color',
+// size:  products.prod_size1 ? products.prod_size1 : 'One Size',
+// image: products.prod_img1,
+// price: products.prod_price,
+// total: products.prod_price,
+// }
+
+// let myItems = JSON.parse(localStorage.getItem('MyItems'))		
+// if(!myItems){
+// myItems = [newItem]
+// localStorage.setItem('MyItems', JSON.stringify(myItems))	
+// }else if(myItems){
+// myItems = [...myItems, newItem]
+// localStorage.setItem('MyItems', JSON.stringify(myItems))
+// console.log(myItems);	
+// }
+
+
+
+
   })
 
 });
