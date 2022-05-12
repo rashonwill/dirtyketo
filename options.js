@@ -74,7 +74,7 @@ function renderApps(){
   `)
     
    $('.food-options').append(cards);
-    $('.title').text('Appetizers')
+    $('.title').append("<h1>Appetizers</h1>")
     return cards;
   })
   
@@ -111,7 +111,7 @@ const menuItemsBurgers = [
   `)
     
    $('.food-options').append(cards);
-     $('.title').text('Burgers')
+    $('.title').append("<h1>Burgers</h1>")
     return cards;
   })
   
