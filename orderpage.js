@@ -11,18 +11,19 @@ $('.count').text(spending);
 
 
 (function(){
+	let items =[]
   let spending = parseInt(localStorage.getItem('cartCount'))
   if (spending >= 1){
     let cartItems = JSON.parse(localStorage.getItem('MyItems'))
-    
-    cartItems.forEach(async function(item){
+    items.push(cartItems)
+    cartItems.forEach(async function(items){
         let food = $(`
        <tr class="myPurchase">
-      <td id="image"><img class="pic" src="${item.image}"></td>
-      <td>${item.name}</td>
+      <td id="image"><img class="pic" src="${items.image}"></td>
+      <td>${items.name}</td>
       <td></td>
       <td class="increase"><input type="text" value="1" class="item-qty"></td>
-      <td class="item-price">${item.price}</td>
+      <td class="item-price">${items.price}</td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
     </tr> 
 `).data('cartItems', cartItems)
