@@ -26,9 +26,11 @@ $('.menu-categories').append(cards);
 return cards;
  })
  
- $(".card").on('click', function(){
+ $(".card").on('click', function(event){
+  event.preventDefault();
   let option = $(this).closest('.card')
-  console.log(option)
+  let cardData = option.data();
+  console.log(cardData)
   window.location = "/options";    
 });
 }
