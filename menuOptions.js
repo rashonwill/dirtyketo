@@ -26,7 +26,9 @@ $('.menu-categories').append(cards);
 return cards;
  })
 
-  
+ $('.card').onClick(function(){
+  <a href="/options"></a>
+ })
 }
 
 
