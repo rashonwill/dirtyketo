@@ -23,7 +23,7 @@ $('.count').text(spending);
       <td class="item-price">${cartItems.price}</td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
     </tr> 
-`).data('itemPurchase', itemPurchase)
+`).data('cartItems', cartItems)
   $('.modal-body').append(cartItems) 
   }else if(spending == 0){
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
