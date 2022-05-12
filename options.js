@@ -23,7 +23,9 @@ $('.count').text(spending);
 //       <td id="image"><img class="pic" src="${items.image}"></td>
 //       <td>${items.name}</td>
 //       <td></td>
+//       <td></td>
 //       <td class="increase"><input type="text" value="1" class="item-qty"></td>
+//       <td></td>
 //       <td class="item-price">${items.price}</td>
 //       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
 //     </tr> 
