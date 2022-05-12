@@ -29,7 +29,7 @@ $('.count').text(spending);
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
   $('.empty-cart').text('Your cart is empty') 
   }
-})()
+})();
 
 
 
