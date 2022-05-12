@@ -147,17 +147,17 @@ margin-left: -180px;
   min-width: 100%;
   grid-template-columns:
     
- minmax(300px, 1fr)
+minmax(300px, 1fr)
     minmax(0, 1fr)      
     minmax(0, 1fr)
     minmax(150px, 1fr)
    
-    minmax(0, 1fr)
-    minmax(0, 1fr) 
+    minmax(50px, 1fr)
+    minmax(150px, 1fr) 
     minmax(200px, 1fr) 
     minmax(0, 1fr)
    
-    minmax(0, 1fr)	  
+    minmax(0, 1fr)  
 	  
     
 }
