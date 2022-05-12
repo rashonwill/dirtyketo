@@ -3,16 +3,19 @@
 
 
 function renderSelection(){
+  $(".course").empty();
+  $(".course-opts").empty();
  let item = JSON.parse(localStorage.getItem('mealSelection'))
-  
-   <div class="selected-order">
-   
-     <div class="course">
+ 
+ let itemPicture = $(`
   <div class="dinner">
     <img src="${item.image}"/>  
       </div> 
-  </div>
-    <div class="course-opts">
+  </div>`).data('item', item)
+ 
+ $(".course").append(itemPicture);
+ 
+ let itemDetails = $(`
   <div class="course-info">
         <div class="course-name">${item.title}</div>
         <div class="course-description">
@@ -21,7 +24,15 @@ function renderSelection(){
         <div class="course-price">$${item.price}| ${item.carbs}</div>
       </div>
       </div>
-</div>
+
+ 
+ `).data('item', item)
+ $(".course-opts").prepend(itemDetails);
+
+ 
+ 
+   
+
 
 }
 
