@@ -1,9 +1,9 @@
 let count = 0;
 let cartTotal = 0.00;
 (function(){
-  let spending = localStorage.getItem('cartItems')
+  let spending = localStorage.getItem('cartCount')
   if (!spending){
-  localStorage.setItem('cartItems', count)
+  localStorage.setItem('cartCount', count)
   }else if (spending){
 $('.count').text(spending);
   }
@@ -11,7 +11,7 @@ $('.count').text(spending);
 
 
 (function(){
-  let spending = parseInt(localStorage.getItem('cartItems'))
+  let spending = parseInt(localStorage.getItem('cartCount'))
   if (spending >= 1){
   $('.modal-body').text('Total Due: $32.76') 
   }else if(spending == 0){
