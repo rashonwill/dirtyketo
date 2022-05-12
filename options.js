@@ -124,6 +124,7 @@ const menuItemsBurgers = [
 
 
 function renderSteak(){
+  $('.title').append("<h1>Steak & Shrimp</h1>")
 const menuItemsSteakShrimp = [
   {id: 1, image: "https://www.aymag.com/wp-content/uploads/2020/05/Garlic-Butter-Steak-Shrimp-Recipe-IMAGE-1.jpg" , title: "Steak and Garlic Shrimp", description: "Our delicious marinated steak grilled over a flame, paired with our famount garlic butter shrimp." , price: "$21.99" , carbs: "10 Carbs"},
   
@@ -159,6 +160,7 @@ const menuItemsSteakShrimp = [
 }
 
 function renderWings(){
+  $('.title').append("<h1>Wings</h1>")
 const menuItemsWings = [
  {id: 1, image: "https://www.allchickenrecipes.com/wp-content/uploads/2019/12/keto-chicken-wings.jpg" , title: "Buffalo Wings", description: "Spicy Buffalo, wings tossed in our house sauce." , price: "$9.99" , carbs: "3 Carbs"},
   
@@ -194,6 +196,7 @@ const menuItemsWings = [
 }
 
 function renderSalads(){
+  $('.title').append("<h1>Salads</h1>")
 const menuItemsSalads = [
   {id: 1, image: "https://www.eatwell101.com/wp-content/uploads/2018/01/shrimp-avocado-tomato-salad.jpg" , title: "Shrimp Avocado Tomato Salad", description: "Avocados, cherry tomatoes, red onion, and cilantro tossed with freshly squeezed lime juice and a dash of olive oil. This shrimp avocado salad is a crazy healthy lunch!." , price: "$8.99" , carbs: "3 Carbs"},
   
@@ -229,6 +232,7 @@ const menuItemsSalads = [
 }
 
 function renderSides(){
+  $('.title').append("<h1>Sides</h1>")
 const menuItemsSides = [
   {id: 1, image: "https://hip2keto.com/wp-content/uploads/sites/3/2019/10/Untitled-13.jpg?resize=1024%2C538&strip=all" , title: "Jicama fries", description: "Crispy Jicama fries." , price: "$3.99" , carbs: "3 Carbs"},
   
@@ -265,6 +269,7 @@ const menuItemsSides = [
 
 
 function renderCharcuterie(){
+  $('.title').append("<h1>Charcuterie</h1>")
 const menuItemsCharcuterie = [
   {id: 1, image: "https://www.lowcarbnomad.com/wp-content/uploads/2020/09/Keto-Breakfast-Charcuterie-Board-21-500x500.jpg" , title: "Breakfast Charcuterie", description: "Our breakfast charucterie board, filled with keto friendly pancakes, breakfast sausage, bacon, eggs, strawberries, blue berries, and rasberries!" , price: "$24.99" , carbs: "10 Carbs"},
   
@@ -300,6 +305,7 @@ const menuItemsCharcuterie = [
 }
 
 function renderLunches(){
+  $('.title').append("<h1>Lunch Menu</h1>")
 const menuItemsLunches = [
    {id: 1, image: "https://mamabearscookbook.com/wp-content/uploads/2019/10/low-carb-beef-stew-feature.jpg" , title: "Beef Stew and Keto Rolls", description: "Our hearty beef stew, paired with keto friendly rolls." , price: "$9.99" , carbs: "4 Carbs"},
   
@@ -336,6 +342,7 @@ const menuItemsLunches = [
 
 
 function renderKids(){
+  $('.title').append("<h1>Kids Menu</h1>")
 const menuItemsKidsMenu = [
    {id: 1, image: "https://www.thedietchefs.com/wp-content/uploads/2019/04/Keto-Pizza-in-10-MINUTES-This-the-is-BEST-Pizza-for-keto-SO-MUCH-BETTER-than-Fat-head-Crust-Pizza.png" , title: "Pizza Slice", description: "Large slice of pepperoni pizza, with crust made of cheese." , price: "$5.99" , carbs: "2 Carbs"},
   
@@ -371,6 +378,7 @@ const menuItemsKidsMenu = [
 }
 
 function renderDesserts(){
+  $('.title').append("<h1>Desserts</h1>")
 const menuItemsDesserts = [
    {id: 1, image: "https://www.fittoservegroup.com/wp-content/uploads/2020/02/keto-blueberry-cheesecake-on-white-plate-2-2-720x720.jpg" , title: "Blueberry Cheesecake", description: "Slice of blueberry cheesecake." , price: "$5.99" , carbs: "9 Carbs"},
   
