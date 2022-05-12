@@ -678,7 +678,7 @@ function renderTheBerryBoard() {
   <div class="course-info">
         <div class="course-name">The Very Bery</div>
         <div class="course-description">
-  <p>Fruit Filled Chacuterie Board, loaded with strawberries, blueberries, rasberreis, melon and more.  </p>
+  <p>Fruit Filled Chacuterie Board, loaded with strawberries, blueberries, rasberries, melon and more.  </p>
         </div>
         <div class="course-price">$17.99 | 21 carbs</div>
       </div>
