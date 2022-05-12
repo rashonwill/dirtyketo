@@ -1,5 +1,6 @@
 (function() {
   $('.food-options').empty();
+  $('.title').empty();
   let selected = JSON.parse(localStorage.getItem('optionID'))
   
   if(selected === 1){
@@ -48,6 +49,7 @@
 
 
 function renderApps(){
+  
   const menuItemsApp = [
   {id: 1, image: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" , title: "Taco Bites", description: "Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits." , price: "$10.99" , carbs: "3 Carbs"},
   
@@ -72,6 +74,7 @@ function renderApps(){
   `)
     
    $('.food-options').append(cards);
+    $('.title').text('Appetizers')
     return cards;
   })
   
@@ -108,6 +111,7 @@ const menuItemsBurgers = [
   `)
     
    $('.food-options').append(cards);
+     $('.title').text('Burgers')
     return cards;
   })
   
