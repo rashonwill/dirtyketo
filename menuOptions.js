@@ -13,12 +13,12 @@ const menuCategories = [
 ]
 
 function foodCategories(menuCategories){
-menuCategories.forEach(function(categorie){
+menuCategories.forEach(function(category){
 let cards = $(`
   <div class="card" style="width: 18rem;" >
-    <img class="card-img-top" src="${categorie.image}" alt="Card image cap">
+    <img class="card-img-top" src="${category.image}" alt="Card image cap">
     <div class="card-body">
-      <p class="card-text">${categorie.title}</p>
+      <p class="card-text">${category.title}</p>
     </div>
   </div>  
 
