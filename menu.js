@@ -127,7 +127,7 @@ $('#tacos').on('click', function(){
 $('.count').text(newCart);
   count = newCount
     
-const element = document.getElementsByClassName(".course-name"); 
+const element = document.getElementsByClassName(".course-info"); 
 console.log(element)
 	  
 let itemDetails = $(this).closest('.course-info').find('.course-name')
