@@ -1,3 +1,28 @@
+let count = 0;
+let cartTotal = 0.00;
+(function(){
+  let spending = localStorage.getItem('cartItems')
+  if (!spending){
+  localStorage.setItem('cartItems', count)
+  }else if (spending){
+$('.count').text(spending);
+  }
+})();
+
+
+(function(){
+  let spending = parseInt(localStorage.getItem('cartItems'))
+  if (spending >= 1){
+  $('.modal-body').text('Total Due: $32.76') 
+  }else if(spending == 0){
+  let cartTot = localStorage.setItem('cartTotal', cartTotal)
+  $('.modal-body').text('Your cart is empty') 
+  }
+})();
+
+
+
+
 function foodCategories(){
  const menuCategories = [
   {id: 1, image: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" , title: "Appetizers"},
