@@ -1,7 +1,7 @@
 function renderSelection(){
   $(".course").empty();
   $(".details").empty();
- let item = localStorage.getItem('mealSelection')
+ let item = JSON.parse(localStorage.getItem('mealSelection'))
  
  let itemPicture = $(`
   <div class="dinner">
@@ -17,7 +17,7 @@ function renderSelection(){
         <div class="course-description">
           <p>${item.description}</p>
         </div>
-        <div class="course-price">$${item.price}| ${item.carbs}</div>
+        <div class="course-price">$${item.price} | ${item.carbs}</div>
       </div>
       </div>
 
