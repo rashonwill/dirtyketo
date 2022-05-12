@@ -29,7 +29,7 @@ return cards;
  $(".card").on('click', function(event){
   event.preventDefault();
   let option = $(this).closest('.card')
-  let cardData = option.data();
+  let cardData = option.data('category');
   console.log(cardData)
 //   window.location = "/options";    
 });
