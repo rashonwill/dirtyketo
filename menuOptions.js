@@ -21,13 +21,15 @@ function foodCategories(category, index){
       <p class="card-text">${category.title}</p>
     </div>
   </div>  
-`);
+`).data('menuCategories');
 $('.menu-categories').append(cards);
 return cards;
  })
  
  $(".card").on('click', function(){
-     window.location = "/options";    
+  let option = $(this).closest('.card').data('menuCategories')
+  console.log(option)
+  window.location = "/options";    
 });
 }
 
