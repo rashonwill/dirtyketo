@@ -32,8 +32,8 @@ return cards;
   console.log(option)
   let id = option.id
   console.log(id)
-//   localStorage.setItem('optionID', JSON.stringify(option.category.id))
-//   window.location = "/options";    
+  localStorage.setItem('optionID', JSON.stringify(option.id))
+  window.location = "/options";    
 });
 }
 
