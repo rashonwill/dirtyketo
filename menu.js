@@ -128,9 +128,9 @@ $('.count').text(newCart);
   count = newCount
     
     
-let itemDetails = $(this).closest('.course-info .course-name')
+let itemDetails = $(this).closest('.course-info').find('.course-name')
 console.log(itemPurchase)
-let itemPic= $(this).closest('.dinner img')
+let itemPic= $(this).closest('.dinner').find('img')
 console.log(itemPic)
 	
 // let newItem = {
