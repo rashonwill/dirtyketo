@@ -1,7 +1,3 @@
-
-
-
-
 function renderSelection(){
   $(".course").empty();
   $(".course-opts").empty();
