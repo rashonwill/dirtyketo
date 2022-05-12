@@ -27,7 +27,7 @@ $('.count').text(spending);
   $('.modal-body').append(cartItems) 
   }else if(spending == 0){
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
-  $('.modal-body').text('Your cart is empty') 
+  $('.empty-cart').text('Your cart is empty') 
   }
 })();
 
