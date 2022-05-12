@@ -25,6 +25,10 @@ function foodCategories(category, index){
 $('.menu-categories').append(cards);
 return cards;
  })
+ 
+ $(".card").on('click', function(){
+     window.location = "http://www.google.com/";    
+});
 }
 
 
