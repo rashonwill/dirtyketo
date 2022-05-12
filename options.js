@@ -49,7 +49,7 @@
 
 
 function renderApps(){
-  
+  $('.title').append("<h1>Appetizers</h1>")
   const menuItemsApp = [
   {id: 1, image: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" , title: "Taco Bites", description: "Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits." , price: "$10.99" , carbs: "3 Carbs"},
   
@@ -74,7 +74,6 @@ function renderApps(){
   `)
     
    $('.food-options').append(cards);
-    $('.title').append("<h1>Appetizers</h1>")
     return cards;
   })
   
@@ -87,6 +86,7 @@ function renderApps(){
 
 
 function renderBurgers(){
+  $('.title').append("<h1>Burgers</h1>")
 const menuItemsBurgers = [
   {id: 1, image: "https://kaseytrenum.com/wp-content/uploads/2020/05/keto-stuffed-burger.jpg" , title: "The Plain Jane", description: "Basic Keto, burger with all the flavor. Comes with lettuce, tomato, onion, and pickles." , price: "$11.99" , carbs: "3 Carbs"},
   
@@ -111,7 +111,7 @@ const menuItemsBurgers = [
   `)
     
    $('.food-options').append(cards);
-    $('.title').append("<h1>Burgers</h1>")
+    
     return cards;
   })
   
