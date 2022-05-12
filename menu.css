@@ -188,21 +188,21 @@ footer ul li{
   font-size: 40px;
 }
 
-
-.shopping-bag{
-  width: 1200px;
-  height: 600px;
-  position: absolute;
-  left: 20%;
-  top: 25%;
-  background: #FDFBF9;
-  border-radius: 10px;
-  z-index: 10;
-  margin: 1rem auto;
-  text-align: center;
-  font-family: "Teko";	
+.modal-body{
   overflow: scroll;
   overflow-x: hidden;
+  padding: none;
+  flex: .9;
+}
+
+.shopping-bag{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 10;
+  text-align: center;
+  font-family: "Teko";	
+
 }
 
 .shopping-bag::-webkit-scrollbar{
