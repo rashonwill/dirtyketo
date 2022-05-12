@@ -6,15 +6,15 @@ function renderSelection(){
  let item = JSON.parse(localStorage.getItem('mealSelection'))
  $(".course").empty();
   $(".course-opts").empty();
-  let course = `
+  let course = $(`
   <div class="dinner">
     <img src="${item.image}"/>  
       </div> 
   
-  `;
+  `);
   $(".course").append(course);
 
-  let mealDetails = `
+  let mealDetails = $(`
   <div class="course-info">
         <div class="course-name">${item.title}</div>
         <div class="course-description">
@@ -23,7 +23,7 @@ function renderSelection(){
         <div class="course-price">$${item.price} | ${item.carbs}</div>
       </div>
   
-  `;
+  `);
   $(".course-opts").prepend(mealDetails);
 
 }
