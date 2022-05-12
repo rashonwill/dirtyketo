@@ -1,3 +1,27 @@
+let count = 0;
+let cartTotal = 0.00;
+(function(){
+  let spending = localStorage.getItem('cartCount')
+  if (!spending){
+  localStorage.setItem('cartCount', count)
+  }else if (spending){
+$('.count').text(spending);
+  }
+})();
+
+
+(function(){
+  let spending = parseInt(localStorage.getItem('cartCount'))
+  if (spending >= 1){
+  $('.modal-body').text('Total Due: $32.76') 
+  }else if(spending == 0){
+  let cartTot = localStorage.setItem('cartTotal', cartTotal)
+  $('.modal-body').text('Your cart is empty') 
+  }
+})();
+
+
+
 (function() {
   $('.food-options').empty();
   $('.title').empty();
