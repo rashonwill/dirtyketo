@@ -61,14 +61,12 @@ function renderApps(){
 
   menuItemsApp.forEach(function(item){
     let cards = $(`
-    <div class="food-options">
     <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="${item.image}" alt="Card image cap">
   <div class="card-body">
     <p class="card-text">${item.title}</p>
     <button class="btn" id="tacos">Order</button>
   </div>
-</div>
 </div>
   
   `)
