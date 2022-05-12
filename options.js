@@ -71,14 +71,18 @@ function renderApps(){
   </div>
 </div>
   
-  `)
+  `).data('item', item)
     
    $('.food-options').append(cards);
     return cards;
   })
   
- $(".btn").on('click', function(){
-     window.location = "/orderpage";    
+ $(".btn").on('click', function(event){
+   event.preventDefault();
+   let selected = $(this).closest('.card').data('item')
+   console.log(selected)
+   localStorage.setItem('mealSelection', selected)
+//      window.location = "/orderpage";    
 });
 
 
