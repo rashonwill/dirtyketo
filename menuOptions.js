@@ -1,4 +1,4 @@
-function foodCategories(category, index){
+function foodCategories(){
  const menuCategories = [
   {id: 1, image: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" , title: "Appetizers"},
   {id: 2, image: "https://www.ketodietyum.com/wp-content/uploads/2020/06/Keto-Bunless-Burger-Recipes.jpg" , title: "Burgers"},
@@ -28,9 +28,8 @@ return cards;
  
  $(".card").on('click', function(event){
   event.preventDefault();
-  let option = $(this).closest('.card')
-  let cardData = option.data('category');
-  console.log(cardData)
+  let option = $(this).closest('.card').data('category');
+  console.log(option)
 //   window.location = "/options";    
 });
 }
