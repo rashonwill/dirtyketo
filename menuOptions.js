@@ -13,9 +13,9 @@ function foodCategories(category, index){
   
 ] 
  
- menuCategories.forEach(function(){
+ menuCategories.forEach(function(category){
   let cards = $(`
-  <div class="card category_${index}" style="width: 18rem;" >
+  <div class="card" style="width: 18rem;" >
     <img class="card-img-top" src="${category.image}" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">${category.title}</p>
