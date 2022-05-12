@@ -28,8 +28,11 @@ return cards;
  
  $(".card").on('click', function(event){
   event.preventDefault();
-  let option = $(this).closest('.card').data();
+  let option = $(this).closest('.card').data('category');
   console.log(option)
+  let id = option.id
+  console.log(id)
+//   localStorage.setItem('optionID', JSON.stringify(option.category.id))
 //   window.location = "/options";    
 });
 }
