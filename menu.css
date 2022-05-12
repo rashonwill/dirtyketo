@@ -229,16 +229,16 @@ background: #FDFBF9;
   min-width: 100%;
   grid-template-columns:
     
-    minmax(200px, 1fr)
-    minmax(0, 1fr)   	  
+ minmax(200px, 1fr)
+    minmax(0, 1fr)      
     minmax(0, 1fr)
-    minmax(0, 1fr)
-	  
+    minmax(150px, 1fr)
+   
     minmax(0, 1fr)
     minmax(0, 1fr) 
-    minmax(150px, 1fr) 
+    minmax(200px, 1fr) 
     minmax(0, 1fr)
-	  
+   
     minmax(0, 1fr)	  
 	  
     
