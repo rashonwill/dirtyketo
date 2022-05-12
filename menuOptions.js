@@ -15,7 +15,7 @@ function foodCategories(category, index){
  
  menuCategories.forEach(function(category){
   let cards = $(`
-  <div class="card" style="width: 18rem;" >
+  <div class="card" style="width: 18rem;" onclick="www.google.com" >
     <img class="card-img-top" src="${category.image}" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">${category.title}</p>
@@ -24,10 +24,6 @@ function foodCategories(category, index){
 `);
 $('.menu-categories').append(cards);
 return cards;
- })
-
- $('.card').onClick(function(){
-  <a href="/options"></a>
  })
 }
 
