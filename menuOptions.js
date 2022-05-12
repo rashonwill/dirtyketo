@@ -12,20 +12,18 @@ const menuCategories = [
   
 ]
 
-function foodCategories(menuCategories){
-menuCategories.forEach(function(category){
+function foodCategories(category, index){
+
 let cards = $(`
-  <div class="card" style="width: 18rem;" >
+  <div class="card category_${index}" style="width: 18rem;" >
     <img class="card-img-top" src="${category.image}" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">${category.title}</p>
     </div>
   </div>  
-`)
+`);
 $('.menu-categories').append(cards);
 return cards;
-})
-
 
 }
 
