@@ -21,7 +21,7 @@ function foodCategories(){
       <p class="card-text">${category.title}</p>
     </div>
   </div>  
-`);
+`).data('category', category);
 $('.menu-categories').append(cards);
 return cards;
  })
