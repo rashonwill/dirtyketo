@@ -1,3 +1,38 @@
+
+
+
+
+function renderSelection(){
+ let item = JSON.parse(localStorage.getItem('mealSelection'))
+ $(".course").empty();
+  $(".course-opts").empty();
+  let course = `
+  <div class="dinner">
+    <img src="${item.image}"/>  
+      </div> 
+  
+  `;
+  $(".course").append(course);
+
+  let mealDetails = `
+  <div class="course-info">
+        <div class="course-name">${item.title}</div>
+        <div class="course-description">
+          <p> ${item.description} </p>
+        </div>
+        <div class="course-price">$${item.price} | ${item.carbs}</div>
+      </div>
+  
+  `;
+  $(".course-opts").prepend(mealDetails);
+
+}
+
+
+renderSelection();
+
+
+
 function renderItem(){
 const meals = [
   {id: 1, image: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/taco-cups-6-500x500.jpg" , title: "Taco Bites", description: "Keto Friendly Taco bites, crunchy taco shells made of chhese, filled with beef, our special taco seasoning, and cheese, topped off with a scoop of sour cream,fresh peppers and  bacon bits." , price: "$10.99" , carbs: "3 Carbs"},
@@ -95,14 +130,6 @@ const meals = [
 	
 
 ]
-
-
-
-
-
-
-
-
 
 
 };
