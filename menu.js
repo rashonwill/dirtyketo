@@ -128,8 +128,10 @@ $('.count').text(newCart);
   count = newCount
     
     
-let itemPurchase = $(this).closest('.course-info').data('tacoDetails');
+let itemDetails = $(this).closest('.course-info .course-name')
 console.log(itemPurchase)
+let itemPic= $(this).closest('.dinner img')
+console.log(itemPic)
 	
 // let newItem = {
 // productid: products.id,
