@@ -21,12 +21,10 @@ let cards = $(`
       <p class="card-text">${category.title}</p>
     </div>
   </div>  
-
-
 `)
 $('.menu-categories').append(cards);
 return cards;
-}
+})
 
 
 }
