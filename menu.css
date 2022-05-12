@@ -311,3 +311,12 @@ height: 100px;
   cursor: pointer;
 }
 
+.item-total{
+margin-left: -50px;
+font-size: 30px;	
+}
+
+.increase{
+font-size: 22px;
+}
+
