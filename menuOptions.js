@@ -121,16 +121,19 @@ $('.count').text(count);
     }
 
 function cleanUp(){
-$('#inthebag tbody').empty();	
+$('#inthebag tbody').empty();
+$('.modal-footer .carttotal h1').empty();
 $('.empty-cart').empty();
 $('.empty-cart').text('Your cart is empty').css('color', ' #a9a9b0').css('text-align', 'center').css('margin-top', '150px') 	
 let cartItem = localStorage.getItem('cartCount')
 count = 0;
 localStorage.setItem('cartCount', count)	
-$('.count').text(count);		
+$('.count').text(count);
+$('.modal-footer .carttotal h1').append('Cart Total: $0.00');	
   localStorage.removeItem('cartTotal');
   localStorage.removeItem('MyItems');
 }
+
 
 paypal.Buttons({
   createOrder: function(data, actions) {
