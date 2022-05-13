@@ -204,11 +204,13 @@ footer ul li{
 
 .shopping-bag{
   width: 100%;
-  height: 100%;
+  height: 550px;
   background: transparent;
   z-index: 10;
   text-align: center;
   font-family: "Teko";	
+  overflow: scroll;
+  overflow-x: hidden;
 
 }
 
@@ -222,12 +224,13 @@ footer ul li{
 }
 
 .shopping-bag::-webkit-scrollbar-thumb {
-  background: #0C1559; 
+  background: #343a40; 
 }
 
 .shopping-bag::-webkit-scrollbar-corner {
 background: #FDFBF9;
 }
+
 
 .shopping-bag table {
   color: #0C1559;
