@@ -237,3 +237,17 @@ font-size: 30px;
 .increase{
 font-size: 22px;
 }
+
+.item-qty{
+width: 55px;
+height: 30px;
+outline: none;
+background: transparent;
+font-family: "Teko";
+font-size: 18px;
+text-align:center;
+padding-top: 5px;	
+border: 3px solid #0C1559;
+border-radius: 20px;
+transition: 0.5s;	
+}
