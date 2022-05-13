@@ -130,8 +130,7 @@ function updateCart(){
 `).data('cartItems', cartItems)
   $('#inthebag tbody').append(food) 
    })
-
-  }
+	  
 	
 $(food).on('click','.fa-times-circle-o', async function(){	
 let newCart = [];	
@@ -152,6 +151,10 @@ localStorage.setItem('cartItems', count)
 $('.count').text(count);
 	
 
-})
+})	  
+	  
+
+  }
+
 
 }
