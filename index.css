@@ -288,3 +288,19 @@ border: 3px solid #0C1559;
 border-radius: 20px;
 transition: 0.5s;	
 }
+
+.carttotal{
+width: 450px;
+height: 50px;
+font-size: 25px;
+color: #0C1559;
+position: absolute;
+left: 0;
+margin-left:10
+}
+
+.carttotal h1{
+font-size: 30;
+font-weight: bold; 
+color: #343a40;  
+}
