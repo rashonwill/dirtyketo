@@ -175,7 +175,7 @@ getTotal();
       let totalCart = myItems.reduce((sum, item) => {
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
-      await AsyncStorage.setItem('cartTotal', JSON.stringify(totalCart))
+      await localStorage.setItem('cartTotal', JSON.stringify(totalCart))
      $('.cartotal').append('<h1>Cart Total: ${totalCart}</h1>')	 
     }
 
