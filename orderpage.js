@@ -132,6 +132,28 @@ function updateCart(){
    })
 
   }
+	
+$(food).on('click','.fa-times-circle-o', async function(){	
+let newCart = [];	
+let producttoRemove = $(this).closest('.myPurchase').data('cartItems');
+let theCart = JSON.parse(localStorage.getItem('MyItems'));
+
+let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
+	
+ theCart.splice(removingPurchase, 1);
+ newCart = theCart 
+ console.log(newCart)
+ $(this).closest('.myPurchase').remove();	
+ localStorage.setItem('MyCartItems', JSON.stringify(newCart))
+ 	
+tabUpdate();		      
+let cartItem = localStorage.getItem('cartCount')
+count = cartItem - 1;
+localStorage.setItem('cartItems', count)	
+$('.count').text(count);
+
+	
+	
 
 }
 
