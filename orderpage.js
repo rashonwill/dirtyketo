@@ -147,7 +147,7 @@ let producttoRemove = $(this).closest('.myPurchase').data()
 console.log(producttoRemove)
 let theCart = JSON.parse(localStorage.getItem('MyItems'));
 
-let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
+let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.productid)
 	
  theCart.splice(removingPurchase, 1);
  newCart = theCart 
