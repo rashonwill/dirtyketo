@@ -187,6 +187,19 @@ getTotal();
      $('.modal-footer .carttotal h1').append('Cart Total: $' + totalCart)	 
     }
 
+
+function cleanUp(){
+$('#inthebag tbody').empty();	
+$('.empty-cart').empty();
+$('.empty-cart').text('Your cart is empty').css('color', ' #a9a9b0').css('text-align', 'center').css('margin-top', '150px') 	
+let cartItem = localStorage.getItem('cartCount')
+count = 0;
+localStorage.setItem('cartCount', count)	
+$('.count').text(count);		
+  localStorage.removeItem('cartTotal');
+  localStorage.removeItem('MyItems');
+}
+
 paypal.Buttons({
   createOrder: function(data, actions) {
     // This function sets up the details of the transaction, including the amount and line item details.
@@ -203,6 +216,7 @@ paypal.Buttons({
     return actions.order.capture().then(function(details) {
       // This function shows a transaction success message to your buyer.
       alert('Transaction completed by ' + details.payer.name.given_name);
+      cleanUp();	    
     });
   }
 }).render('.paypal');
