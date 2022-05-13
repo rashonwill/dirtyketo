@@ -171,7 +171,7 @@ getTotal();
 
  async function getTotal(){
 	 $('.carttotal').empty();
-      let myItems = JSON.parse(await AsyncStorage.getItem('MyItems'))
+      let myItems = JSON.parse(await localStorage.getItem('MyItems'))
       let totalCart = myItems.reduce((sum, item) => {
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
