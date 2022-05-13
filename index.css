@@ -175,7 +175,13 @@ footer ul li {
 background: #FDFBF9;
 }
 
-
+.shopping-bag table {
+  color: #0C1559;
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns:
+    
 minmax(180px, 1fr)
     minmax(200px, 1fr)      
     minmax(0px, 1fr)
