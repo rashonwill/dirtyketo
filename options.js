@@ -37,7 +37,7 @@ $('.count').text(spending);
 
   }else if(spending == 0){
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
-  $('.empty-cart').text('Your cart is empty') 
+  $('.empty-cart').text('Your cart is empty').css('color', ' #a9a9b0').css('text-align', 'center').css('margin-top', '150px')
   }
 })();
 
