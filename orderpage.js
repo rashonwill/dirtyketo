@@ -6,6 +6,7 @@ let cartTotal = 0.00;
   localStorage.setItem('cartCount', count)
   }else if (spending){
 $('.count').text(spending);
+ getTotal();	  
   }
 })();
 
@@ -31,12 +32,14 @@ $('.count').text(spending);
       
     </tr> 
 `).data('cartItems', cartItems)
-  $('#inthebag tbody').append(food) 
+  $('#inthebag tbody').append(food)
+getTotal();	    
    })
 
   }else if(spending == 0){
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
   $('.empty-cart').text('Your cart is empty') 
+	  
   }
 })()
 
@@ -135,7 +138,8 @@ let cartItem = localStorage.getItem('cartCount')
 count = cartItem - 1;
 localStorage.setItem('cartCount', count)	
 $('.count').text(count);
-	
+
+getTotal();	
 
 })	
 
@@ -159,8 +163,17 @@ let cartItem = localStorage.getItem('cartCount')
 count = cartItem - 1;
 localStorage.setItem('cartCount', count)	
 $('.count').text(count);
-	
+getTotal();	
 
 })
+
+ async function getTotal(){
+      let myItems = JSON.parse(await AsyncStorage.getItem('MyItems'))
+      let totalCart = myItems.reduce((sum, item) => {
+        return sum + item.price * item.quantity;
+      }, 0).toFixed(2)
+      await AsyncStorage.setItem('cartTotal', JSON.stringify(totalCart))
+     $('.modal-header #total').append(totalCart)	 
+    }
 
 
