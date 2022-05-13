@@ -131,6 +131,11 @@ let removingPurchase = theCart.findIndex(items => items.productid === producttoR
  $(this).closest('.myPurchase').remove();	
  localStorage.setItem('MyCartItems', JSON.stringify(newCart))
 	
+let cartItem = localStorage.getItem('cartCount')
+count = cartItem - 1;
+localStorage.setItem('cartCount', count)	
+$('.count').text(count);
+	
 
 })	
 
