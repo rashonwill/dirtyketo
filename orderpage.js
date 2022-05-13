@@ -3,9 +3,9 @@ let cartTotal = 0.00;
 (function(){
   let spending = localStorage.getItem('cartCount')
   if (!spending){
-$('.carttotal').empty();
+$('.modal-footer .carttotal').empty();
   localStorage.setItem('cartCount', count)
-  $('.cartotal').append('<h1>Cart Total: $0.00</h1>')	  
+  $('.modal-footer .cartotal').append('<h1>Cart Total: $0.00</h1>')	  
   }else if (spending){
 $('.count').text(spending);
  getTotal();	  
@@ -170,13 +170,13 @@ getTotal();
 })
 
  async function getTotal(){
-	 $('.carttotal').empty();
+	 $('.modal-footer .carttotal').empty();
       let myItems = JSON.parse(await localStorage.getItem('MyItems'))
       let totalCart = myItems.reduce((sum, item) => {
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
       await localStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.cartotal').append('<h1>Cart Total: ${totalCart}</h1>')	 
+     $('.modal-footer .cartotal').append('<h1>Cart Total: ${totalCart}</h1>')	 
     }
 
 
