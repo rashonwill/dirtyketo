@@ -11,7 +11,7 @@ $('.count').text(spending);
 
 
 (function(){
-	let items =[]
+  let items =[]
   let spending = parseInt(localStorage.getItem('cartCount'))
   if (spending >= 1){
     let cartItems = JSON.parse(localStorage.getItem('MyItems'))
@@ -90,8 +90,6 @@ name: purchase.title,
 quantity: 1,
 price: purchase.price,
 }	
-
-console.log(purchase)
 	
 let myItems = JSON.parse(localStorage.getItem('MyItems'))		
 if(!myItems){
@@ -102,8 +100,40 @@ myItems = [...myItems, newItem]
 localStorage.setItem('MyItems', JSON.stringify(myItems))
 console.log(myItems);	
 }
-	
+
+updateCart();	
 
 })
+
+//Update Cart
+
+function updateCart(){
+  let items =[]
+  let spending = parseInt(localStorage.getItem('cartCount'))
+  if (spending >= 1){
+    let cartItems = JSON.parse(localStorage.getItem('MyItems'))
+    items.push(cartItems)
+	  console.log(items)
+    cartItems.forEach(async function(items){
+        let food = $(`
+       <tr class="myPurchase">
+       <td></td>
+      <td id="image"><img class="pic" src="${items.image}"></td>
+      <td>${items.name}</td>
+      <td></td>
+      <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
+      <td></td>
+      <td class="item-price">${items.price}</td>
+      <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
+      <td></td>
+      
+    </tr> 
+`).data('cartItems', cartItems)
+  $('#inthebag tbody').append(food) 
+   })
+
+  }
+
+}
 
 
