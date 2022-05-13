@@ -81,6 +81,7 @@ localStorage.setItem('cartCount', bagCount);
 let newCartCount = localStorage.getItem('cartCount');                      
 $('.count').text(newCartCount);	
 	
+$('.empty-cart').empty();	
 let purchase = JSON.parse(localStorage.getItem('mealSelection'))
 let newItem = {
 productid: purchase.id,
@@ -118,7 +119,8 @@ console.log(myItems);
 	  
 $(food).on('click','.fa-times-circle-o', async function(){	
 let newCart = [];	
-let producttoRemove = $(this).closest('.myPurchase').data('cartItems');
+let producttoRemove = $(this).closest('.myPurchase').data('newItem');
+console.log(producttoRemove)
 let theCart = JSON.parse(localStorage.getItem('MyItems'));
 
 let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
