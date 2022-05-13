@@ -24,7 +24,7 @@ $('.count').text(spending);
       <td>${items.name}</td>
       <td></td>
       <td></td>
-      <td class="increase"><input type="text" value="1" class="item-qty"></td>
+      <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
       <td></td>
       <td class="item-price">${items.price}</td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
