@@ -123,6 +123,7 @@ console.log(myItems);
     </tr> 
 `).data('newItem', newItem)
   $('#inthebag tbody').append(food) 
+getTotal();	
 	  
 $(food).on('click','.fa-times-circle-o', async function(){	
 let newCart = [];	
