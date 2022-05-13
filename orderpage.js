@@ -1,12 +1,14 @@
 let count = 0;
 let cartTotal = 0.00;
 (function(){
+$('.modal-footer .carttotal').empty();
   let spending = localStorage.getItem('cartCount')
   if (!spending){
-$('.modal-footer .carttotal').empty();
   localStorage.setItem('cartCount', count)
-  $('.modal-footer .carttotal').append('<h1>Cart Total: $0.00</h1>')	  
-  }else if (spending){
+  localStorage.setItem('cartTotal', cartTotal)	  
+  $('.modal-footer .carttotal').append('<h1>Cart Total: $0.00</h1>')
+	  $('.count').text(spending);
+  }else if (spending && spending > 0){
 $('.count').text(spending);
  getTotal();	  
   }
@@ -176,7 +178,7 @@ getTotal();
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
       localStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.modal-footer .carttotal').append('<h1>Cart Total:</h1>' + totalCart)	 
+     $('.modal-footer .carttotal').append('<h1>Cart Total: </h1>' + totalCart)	 
     }
 
 
