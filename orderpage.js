@@ -87,6 +87,9 @@ let bagCount = count + 1
 localStorage.setItem('cartCount', bagCount);
 let newCartCount = localStorage.getItem('cartCount');                      
 $('.count').text(newCartCount);	
+$('#addtocart').text('')
+$('#addtocart').text('Added to Cart!')	
+	
 	
 $('.empty-cart').empty();	
 let purchase = JSON.parse(localStorage.getItem('mealSelection'))
