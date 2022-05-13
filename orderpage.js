@@ -141,4 +141,26 @@ $('.count').text(count);
 
 })
 
+$('.myPurchase').on('click','.fa-times-circle-o', async function(){	
+let newCart = [];	
+let producttoRemove = $(this).closest('.myPurchase').data()
+console.log(producttoRemove)
+// let theCart = JSON.parse(localStorage.getItem('MyItems'));
+
+// let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
+	
+//  theCart.splice(removingPurchase, 1);
+//  newCart = theCart 
+//  console.log(newCart)
+//  $(this).closest('.myPurchase').remove();	
+//  localStorage.setItem('MyItems', JSON.stringify(newCart))
+	
+// let cartItem = localStorage.getItem('cartCount')
+// count = cartItem - 1;
+// localStorage.setItem('cartCount', count)	
+// $('.count').text(count);
+	
+
+})
+
 
