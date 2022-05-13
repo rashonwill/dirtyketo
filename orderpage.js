@@ -177,6 +177,8 @@ getTotal();
       let totalCart = myItems.reduce((sum, item) => {
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
+      
+      console.log(totalCart)
       localStorage.setItem('cartTotal', JSON.stringify(totalCart))
      $('.modal-footer .carttotal').append('<h1>Cart Total: </h1>' + totalCart)	 
     }
