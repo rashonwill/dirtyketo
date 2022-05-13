@@ -180,7 +180,7 @@ getTotal();
       
       console.log(totalCart)
       localStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.modal-footer .carttotal').append('<h1>Cart Total: </h1>' + ' ' + $ + totalCart)	 
+     $('.modal-footer .carttotal').append('<h1>Cart Total: $ </h1>' + totalCart)	 
     }
 
 
