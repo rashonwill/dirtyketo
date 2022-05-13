@@ -3,7 +3,7 @@ let cartTotal = 0.00;
 (function(){
 $('.modal-footer .carttotal h1').empty();
   let spending = localStorage.getItem('cartCount')
-  if (!spending){
+  if (!spending || spending == 0){
   localStorage.setItem('cartCount', count)
   localStorage.setItem('cartTotal', cartTotal)	  
   $('.modal-footer .carttotal h1').append('Cart Total: $0.00')
