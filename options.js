@@ -20,13 +20,14 @@ $('.count').text(spending);
     cartItems.forEach(async function(items){
         let food = $(`
        <tr class="myPurchase">
+       <td></td>
       <td id="image"><img class="pic" src="${items.image}"></td>
       <td>${items.name}</td>
       <td></td>
-      <td></td>
-      <td class="increase"><input type="text" value="1" class="item-qty"></td>
+      <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
       <td></td>
       <td class="item-price">${items.price}</td>
+      <td></td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
     </tr> 
 `).data('cartItems', cartItems)
@@ -37,7 +38,7 @@ $('.count').text(spending);
   let cartTot = localStorage.setItem('cartTotal', cartTotal)
   $('.empty-cart').text('Your cart is empty') 
   }
-})();
+})()
 
 
 
