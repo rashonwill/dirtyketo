@@ -27,8 +27,9 @@ $('.count').text(spending);
       <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
       <td></td>
       <td class="item-price">${items.price}</td>
-      <td></td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
+      <td></td>
+      
     </tr> 
 `).data('cartItems', cartItems)
   $('#inthebag tbody').append(food) 
