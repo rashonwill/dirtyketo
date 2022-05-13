@@ -30,7 +30,7 @@ $('.count').text(spending);
       <td></td>
       <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
       <td></td>
-      <td class="item-price">${items.price}</td>
+      <td class="item-price">$${items.price}</td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
       <td></td>
       
@@ -68,7 +68,7 @@ function renderSelection(){
         <div class="course-description">
           <p>${item.description}</p>
         </div>
-        <div class="course-price">${item.price} | ${item.carbs}</div>
+        <div class="course-price">$${item.price} | ${item.carbs}</div>
       </div>
       </div>
 
@@ -116,7 +116,7 @@ console.log(myItems);
       <td></td>
       <td class="increase"><input type="text" value="1" class="item-qty" readonly></td>
       <td></td>
-      <td class="item-price">${newItem.price}</td>
+      <td class="item-price">$${newItem.price}</td>
       <td><i class="fa fa-times-circle-o" aria-hidden="true"></i></td>
       <td></td>
       
@@ -180,7 +180,7 @@ getTotal();
       
       console.log(totalCart)
       localStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.modal-footer .carttotal').append('<h1>Cart Total: </h1>' + totalCart)	 
+     $('.modal-footer .carttotal').append('<h1>Cart Total: </h1>' + ' ' + $ + totalCart)	 
     }
 
 
