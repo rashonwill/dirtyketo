@@ -226,7 +226,6 @@ background: #FDFBF9;
 margin-left: -180px;
 
 }
-
 .shopping-bag table {
   color: #0C1559;
   display: grid;
@@ -247,7 +246,6 @@ minmax(250px, 1fr)
     minmax(0, 1fr)
     
 }
-
 .shopping-bag #image{
 width: 100px;
 height: 100px;	
