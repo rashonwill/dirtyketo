@@ -171,12 +171,12 @@ getTotal();
 
  async function getTotal(){
 	 $('.modal-footer .carttotal').empty();
-      let myItems = JSON.parse(await localStorage.getItem('MyItems'))
+      let myItems = JSON.parse(localStorage.getItem('MyItems'))
       let totalCart = myItems.reduce((sum, item) => {
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
-      await localStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.modal-footer .carttotal').append('<h1>Cart Total: ${totalCart}</h1>')	 
+      localStorage.setItem('cartTotal', JSON.stringify(totalCart))
+     $('.modal-footer .carttotal').append('<h1>Cart Total:</h1>' + totalCart)	 
     }
 
 
