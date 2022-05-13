@@ -4,6 +4,7 @@ let cartTotal = 0.00;
   let spending = localStorage.getItem('cartCount')
   if (!spending){
   localStorage.setItem('cartCount', count)
+  $('.modal-header #total').append(cartTotal) 	  
   }else if (spending){
 $('.count').text(spending);
  getTotal();	  
