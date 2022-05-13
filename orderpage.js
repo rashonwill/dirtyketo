@@ -121,15 +121,15 @@ $(food).on('click','.fa-times-circle-o', async function(){
 let newCart = [];	
 let producttoRemove = $(this).closest('.myPurchase').data('newItem');
 console.log(producttoRemove)
-let theCart = JSON.parse(localStorage.getItem('MyItems'));
+// let theCart = JSON.parse(localStorage.getItem('MyItems'));
 
-let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
+// let removingPurchase = theCart.findIndex(items => items.productid === producttoRemove.id)
 	
- theCart.splice(removingPurchase, 1);
- newCart = theCart 
- console.log(newCart)
- $(this).closest('.myPurchase').remove();	
- localStorage.setItem('MyCartItems', JSON.stringify(newCart))
+//  theCart.splice(removingPurchase, 1);
+//  newCart = theCart 
+//  console.log(newCart)
+//  $(this).closest('.myPurchase').remove();	
+//  localStorage.setItem('MyCartItems', JSON.stringify(newCart))
 	
 
 })	
