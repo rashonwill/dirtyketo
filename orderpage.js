@@ -150,10 +150,8 @@ let cartItem = localStorage.getItem('cartCount')
 count = cartItem - 1;
 localStorage.setItem('cartItems', count)	
 $('.count').text(count);
-
-	
 	
 
 })
 
-
+}
