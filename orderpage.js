@@ -5,7 +5,7 @@ let cartTotal = 0.00;
   if (!spending){
 $('.carttotal').empty();
   localStorage.setItem('cartCount', count)
-  $('.cartotal').append(<h1>'Cart Total:' + ' ' + '$0.00'</h1>)	  
+  $('.cartotal').append('<h1>Cart Total: $0.00</h1>')	  
   }else if (spending){
 $('.count').text(spending);
  getTotal();	  
@@ -176,7 +176,7 @@ getTotal();
         return sum + item.price * item.quantity;
       }, 0).toFixed(2)
       await AsyncStorage.setItem('cartTotal', JSON.stringify(totalCart))
-     $('.cartotal').append(<h1>'Cart Total:' + ' ' + totalCart</h1>)	 
+     $('.cartotal').append('<h1>Cart Total: ${totalCart}</h1>')	 
     }
 
 
