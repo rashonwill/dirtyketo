@@ -49,9 +49,13 @@ body {
 
 .ketoOne {
   width: 1200px;
+  height: 100%;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
 }
 .ketoTwo {
   width: 1200px;
+  height: 100%;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
 .explore {
